@@ -39,11 +39,18 @@ export async function updateSession(request: NextRequest) {
     data: { user },
   } = await supabase.auth.getUser()
 
-  // Protected routes logic can be added here
-  // Example:
-  // if (!user && request.nextUrl.pathname.startsWith('/dashboard')) {
-  //   return NextResponse.redirect(new URL('/login', request.url))
-  // }
+  // Auth routes - redirect to home if already authenticated
+  const authPaths = ["/login", "/signup", "/forgot-password", "/reset-password"]
+  const isAuthPath = authPaths.some((path) => request.nextUrl.pathname.startsWith(path))
+
+  // Redirect authenticated users from auth pages to home
+  if (user && isAuthPath) {
+    const redirectUrl = new URL("/", request.url)
+    return NextResponse.redirect(redirectUrl)
+  }
+
+  // Note: Home page (/) is accessible to everyone
+  // Authentication is enforced at the UI level via the lock overlay on conversation options
 
   // IMPORTANT: You *must* return the supabaseResponse object as it is. If you're
   // creating a new response object with NextResponse.next() make sure to:
