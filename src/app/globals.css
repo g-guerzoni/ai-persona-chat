@@ -166,3 +166,56 @@
     @apply transition-all duration-300 ease-in-out;
   }
 }
+
+/* Accessibility: Focus Indicators */
+@layer base {
+  /* Enhanced focus styles for keyboard navigation */
+  *:focus-visible {
+    @apply outline-ring outline outline-2 outline-offset-2;
+  }
+
+  /* Button focus styles */
+  button:focus-visible,
+  a:focus-visible {
+    @apply outline-ring outline outline-2 outline-offset-2;
+  }
+
+  /* Input focus styles - already have ring but ensure consistency */
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible {
+    @apply ring-ring ring-offset-background ring-2 ring-offset-2 outline-none;
+  }
+
+  /* Radio and checkbox focus styles */
+  input[type="radio"]:focus-visible,
+  input[type="checkbox"]:focus-visible {
+    @apply outline-ring outline outline-2 outline-offset-2;
+  }
+
+  /* Skip link visible on focus */
+  .sr-only:focus,
+  .sr-only:focus-visible {
+    @apply not-sr-only;
+  }
+
+  /* Remove default focus outline for mouse users (only if :focus-visible is supported) */
+  *:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  /* Ensure interactive elements have visible focus */
+  [role="button"]:focus-visible,
+  [role="tab"]:focus-visible,
+  [role="radio"]:focus-visible,
+  [role="checkbox"]:focus-visible,
+  [role="menuitem"]:focus-visible,
+  [role="option"]:focus-visible {
+    @apply outline-ring outline outline-2 outline-offset-2;
+  }
+
+  /* Link focus with underline for additional clarity */
+  a:focus-visible {
+    @apply underline decoration-2 underline-offset-4;
+  }
+}
