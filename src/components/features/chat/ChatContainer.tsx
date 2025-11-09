@@ -3,37 +3,70 @@
 import { ChatHeader } from "./ChatHeader"
 import { ChatMessageList } from "./ChatMessageList"
 import { MobileSettingsPanel } from "../settings/MobileSettingsPanel"
-import type { ChatMessageProps } from "./ChatMessage"
+import type { ChatMessage, ConversationSettings } from "@/hooks/useConversation"
+import type { ScenarioMetadata } from "@/types/conversation"
 
 export interface ChatContainerProps {
   personaName: string
   personaRole: string
+  caseId?: string
+  subject?: string
+  notes?: string
   onSettingsToggle?: () => void
-  messages: ChatMessageProps[]
-  isProcessing?: boolean
+  onNewConversation?: () => void
+  messages: ChatMessage[]
   showMobileSettings?: boolean
   isMobile?: boolean
+  metadata: ScenarioMetadata | null
+  settings: ConversationSettings
+  onSettingsChange: (settings: Partial<ConversationSettings>) => void
 }
 
 export function ChatContainer({
   personaName,
   personaRole,
+  caseId,
+  subject,
+  notes,
   onSettingsToggle,
+  onNewConversation,
   messages,
-  isProcessing = false,
   showMobileSettings = false,
   isMobile = false,
+  metadata,
+  settings,
+  onSettingsChange,
 }: ChatContainerProps) {
+  // Convert ChatMessage[] to ChatMessageProps[] for ChatMessageList
+  const messageProps = messages.map((msg) => ({
+    content: msg.content,
+    type: msg.role,
+    scores: msg.scores,
+  }))
+
   return (
-    <div className="relative flex min-h-0 flex-1 flex-col overflow-hidden">
-      <ChatHeader name={personaName} role={personaRole} onSettingsToggle={onSettingsToggle} />
-      {isMobile && <MobileSettingsPanel isOpen={showMobileSettings} />}
-      <ChatMessageList messages={messages} />
-      {isProcessing && (
-        <div className="bg-muted absolute bottom-2 left-1/2 -translate-x-1/2 rounded-md px-4 py-2">
-          <span className="text-muted-foreground text-sm">Processing...</span>
-        </div>
+    <section
+      className="relative flex min-h-0 flex-1 flex-col overflow-hidden"
+      aria-label="Chat conversation"
+    >
+      <ChatHeader
+        name={personaName}
+        role={personaRole}
+        caseId={caseId}
+        subject={subject}
+        notes={notes}
+        onSettingsToggle={onSettingsToggle}
+        onNewConversation={onNewConversation}
+      />
+      {isMobile && (
+        <MobileSettingsPanel
+          isOpen={showMobileSettings}
+          metadata={metadata}
+          settings={settings}
+          onSettingsChange={onSettingsChange}
+        />
       )}
-    </div>
+      <ChatMessageList messages={messageProps} />
+    </section>
   )
 }

@@ -18,9 +18,16 @@ export function ChatMessageList({ messages }: ChatMessageListProps) {
     <div
       ref={scrollRef}
       className="flex h-[300px] flex-col gap-4 overflow-x-hidden overflow-y-auto p-4"
+      role="log"
+      aria-live="polite"
+      aria-atomic="false"
+      aria-label="Chat messages"
     >
       {messages.length === 0 ? (
-        <div className="text-muted-foreground flex flex-1 items-center justify-center text-center">
+        <div
+          className="text-muted-foreground flex flex-1 items-center justify-center text-center"
+          role="status"
+        >
           <p>No messages yet. Start a conversation!</p>
         </div>
       ) : (

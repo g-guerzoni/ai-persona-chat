@@ -28,15 +28,24 @@ export function ChatInput({ onSend, placeholder = "Type a message..." }: ChatInp
   return (
     <div className="border-border flex flex-col gap-2 border-t p-4">
       <div className="flex gap-2">
+        <label htmlFor="chat-input" className="sr-only">
+          Type your message
+        </label>
         <textarea
+          id="chat-input"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           onKeyPress={handleKeyPress}
           placeholder={placeholder}
           className="bg-input text-foreground placeholder:text-muted-foreground border-border focus:ring-ring flex-1 resize-none rounded-md border px-3 py-2 text-sm focus:ring-2 focus:outline-none"
           rows={3}
+          aria-label="Type your message"
+          aria-describedby="chat-input-instructions"
         />
-        <Button onClick={handleSend} className="shrink-0">
+        <span id="chat-input-instructions" className="sr-only">
+          Press Enter to send, Shift+Enter for new line
+        </span>
+        <Button onClick={handleSend} className="shrink-0" aria-label="Send message">
           Send
         </Button>
       </div>
