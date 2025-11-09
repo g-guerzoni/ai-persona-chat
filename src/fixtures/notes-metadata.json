@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "personaName": "David",
+    "personaRole": "Disappointed Client",
+    "callId": "901234",
+    "service": "Product Support",
+    "subject": "Product Defect - Repeat Issue",
+    "notes": "Third complaint about the same recurring product defect. Client is losing patience and considering alternatives. Needs all three traits: clarity on resolution, friendly demeanor, and empathy for frustration.",
+    "oceanTraits": {
+      "openness": 60,
+      "conscientiousness": 80,
+      "extraversion": 50,
+      "agreeableness": 40,
+      "neuroticism": 55
+    },
+    "primaryTrait": "agreeableness",
+    "secondaryTrait": "conscientiousness"
+  },
+  "initialMessages": {
+    "systemMessage": "You are speaking with David, a disappointed client reporting a product defect for the third time. He's frustrated with the recurring issue and is considering switching to a competitor. Your goal is to demonstrate clarity in your solution, maintain a friendly tone despite his frustration, and show genuine empathy for his situation.",
+    "initialMessage": {
+      "role": "ai",
+      "content": "Hi, this is David again - case #901234. This is the THIRD time I'm contacting you about the same issue with your product. The screen keeps freezing after 2 hours of use. I've tried everything you suggested before and it still happens. I'm seriously considering switching to a competitor at this point."
+    }
+  }
+}

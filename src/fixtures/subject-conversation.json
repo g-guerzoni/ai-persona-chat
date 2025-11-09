@@ -1,0 +1,760 @@
+{
+  "conversationTree": [
+    {
+      "id": "start",
+      "level": 0,
+      "options": [
+        {
+          "id": "opt_0_a",
+          "text": {
+            "friendly-low-low": "I can help you get back into your account. Let me check what's happening.",
+            "friendly-low-high": "I understand this is stressful. I can help you get back into your account. Let me check what's happening.",
+            "friendly-high-low": "Don't worry! I'm here to help you get back into your account. Let me check what's going on right now!",
+            "friendly-high-high": "Don't worry, we're going to get you back into your account! I know this is stressful with your meeting coming up. Let me check what's going on right now!",
+            "professional-low-low": "I will assist you with account access. Let me review your account status.",
+            "professional-low-high": "I understand this is concerning. I will assist you with account access. Let me review your account status.",
+            "professional-high-low": "I'm here to help you regain access to your account. Let me review your account status immediately!",
+            "professional-high-high": "I understand this is urgent and stressful, and I'm here to help you regain access to your account. Let me review your account status immediately."
+          },
+          "scores": {
+            "clarity": 1,
+            "friendly": 2,
+            "empathy": 2
+          },
+          "nextNodeId": "response_0_a"
+        },
+        {
+          "id": "opt_0_b",
+          "text": {
+            "friendly-low-low": "Tell me what error message you're seeing when you try to reset.",
+            "friendly-low-high": "Can you tell me what error message you're seeing when you try to reset your password?",
+            "friendly-high-low": "Let's figure this out together! What error message are you seeing when you try to reset your password?",
+            "friendly-high-high": "Okay, let's figure this out together! I know it's worrying, but we'll get it fixed. What error message are you seeing when you try to reset your password?",
+            "professional-low-low": "Provide the error message displayed during password reset attempts.",
+            "professional-low-high": "Please provide the specific error message displayed during password reset attempts.",
+            "professional-high-low": "To help resolve this quickly, could you please share the specific error message you're seeing?",
+            "professional-high-high": "I know this is stressful, so to help resolve this quickly, could you please share the specific error message you're seeing when attempting to reset your password?"
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 0,
+            "empathy": 0
+          },
+          "nextNodeId": "response_0_b"
+        }
+      ]
+    },
+    {
+      "id": "response_0_a",
+      "type": "ai_response",
+      "content": "Thank you! I really appreciate it. I'm just so stressed about this meeting - all my presentation files are in there.",
+      "nextNodeId": "level_1_a"
+    },
+    {
+      "id": "response_0_b",
+      "type": "ai_response",
+      "content": "It says 'Password reset failed - too many attempts. Please contact support.' I didn't know there was a limit! What do I do now?",
+      "nextNodeId": "level_1_b"
+    },
+    {
+      "id": "level_1_a",
+      "level": 1,
+      "options": [
+        {
+          "id": "opt_1_a1",
+          "text": {
+            "friendly-low-low": "I see your account has a security hold. I can unlock it for you now.",
+            "friendly-low-high": "I understand this is stressful. I can see your account has a security hold. I can unlock it for you right now.",
+            "friendly-high-low": "Good news! I can see your account got a security hold, but I can unlock it for you right now!",
+            "friendly-high-high": "I totally understand the stress! I can see your account got a security hold, but good news - I can unlock it for you right this second!",
+            "professional-low-low": "Your account has a security hold. I will unlock it immediately.",
+            "professional-low-high": "I understand your concern. Your account has a security hold. I will unlock it immediately.",
+            "professional-high-low": "I can see your account has a security hold due to multiple reset attempts. I can unlock this for you immediately!",
+            "professional-high-high": "I can see your account has a security hold due to multiple reset attempts. I understand this is stressful, and I can unlock this for you immediately."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 2,
+            "empathy": 2
+          },
+          "nextNodeId": "response_1_a1"
+        },
+        {
+          "id": "opt_1_a2",
+          "text": {
+            "friendly-low-low": "Let me look into why the reset isn't working.",
+            "friendly-low-high": "Let me look into why the password reset isn't working. Give me a moment.",
+            "friendly-high-low": "Let me dig into why that password reset isn't cooperating! Give me just a moment!",
+            "friendly-high-high": "Let me dig into why that password reset isn't cooperating! I know you're worried, but give me just a moment!",
+            "professional-low-low": "I will investigate the password reset failure.",
+            "professional-low-high": "I will investigate the password reset failure. One moment please.",
+            "professional-high-low": "Let me investigate why your password reset attempts are failing. This will take just a moment!",
+            "professional-high-high": "I know time is important to you. Let me investigate why your password reset attempts are failing. This will take just a moment."
+          },
+          "scores": {
+            "clarity": 1,
+            "friendly": 1,
+            "empathy": 1
+          },
+          "nextNodeId": "response_1_a2"
+        }
+      ]
+    },
+    {
+      "id": "level_1_b",
+      "level": 1,
+      "options": [
+        {
+          "id": "opt_1_b1",
+          "text": {
+            "friendly-low-low": "This happens for security. I can remove that lockout for you now.",
+            "friendly-low-high": "That's okay - this happens sometimes for security. I can remove that lockout for you right now.",
+            "friendly-high-low": "That's totally okay! It happens for security protection. The good news is I can remove that lockout for you right away!",
+            "friendly-high-high": "Oh, that's totally okay! It happens for security protection, so don't worry. The good news is I can remove that lockout for you right away!",
+            "professional-low-low": "This is a standard security measure. I can remove the lockout immediately.",
+            "professional-low-high": "This is a standard security measure. I understand your concern, and I can remove the lockout immediately.",
+            "professional-high-low": "This is a standard security measure to protect your account. I can remove the lockout restriction for you immediately!",
+            "professional-high-high": "This is a standard security measure to protect your account, so please don't worry. I can remove the lockout restriction for you immediately."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 2,
+            "empathy": 2
+          },
+          "nextNodeId": "response_1_b1"
+        },
+        {
+          "id": "opt_1_b2",
+          "text": {
+            "friendly-low-low": "There's a limit after 3 attempts. I'll need to verify your identity first.",
+            "friendly-low-high": "Yes, there's a security limit after 3 attempts. I'll need to verify your identity first.",
+            "friendly-high-low": "Yeah, after 3 tries it locks for security! But don't worry - I just need to verify your identity real quick!",
+            "friendly-high-high": "Yeah, after 3 tries it locks for security! But don't worry - I just need to verify your identity real quick and we can fix this!",
+            "professional-low-low": "The system implements a 3-attempt security limit. I must verify your identity.",
+            "professional-low-high": "Yes, the system implements a security limit after 3 attempts. I'll need to verify your identity before proceeding.",
+            "professional-high-low": "Yes, the system implements a security limit after 3 attempts for protection. I'll need to verify your identity before I can assist!",
+            "professional-high-high": "Yes, the system implements a security limit after 3 attempts for protection. I understand this adds to your stress, but I'll need to verify your identity before I can assist with unlocking your account."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 1,
+            "empathy": 0
+          },
+          "nextNodeId": "response_1_b2"
+        }
+      ]
+    },
+    {
+      "id": "response_1_a1",
+      "type": "ai_response",
+      "content": "Oh thank goodness! That would be amazing. How long will it take? My meeting is at 2 PM.",
+      "nextNodeId": "level_2_a1"
+    },
+    {
+      "id": "response_1_a2",
+      "type": "ai_response",
+      "content": "Okay... I really hope this can be fixed quickly. Should I be doing anything on my end while you check?",
+      "nextNodeId": "level_2_a2"
+    },
+    {
+      "id": "response_1_b1",
+      "type": "ai_response",
+      "content": "Oh that's such a relief! I was worried I'd done something wrong. How do we remove it?",
+      "nextNodeId": "level_2_b1"
+    },
+    {
+      "id": "response_1_b2",
+      "type": "ai_response",
+      "content": "Okay, I can do that. What do you need me to verify? I just really need to get in soon.",
+      "nextNodeId": "level_2_b2"
+    },
+    {
+      "id": "level_2_a1",
+      "level": 2,
+      "options": [
+        {
+          "id": "opt_2_a1_1",
+          "text": {
+            "friendly-low-low": "I'm unlocking it now. It will be ready in about 2 minutes.",
+            "friendly-low-high": "I'm unlocking it right now. It will be ready in about 2 minutes. You'll have plenty of time before your meeting.",
+            "friendly-high-low": "I'm unlocking it right this second! It'll be ready in about 2 minutes, so you'll have plenty of time!",
+            "friendly-high-high": "I'm unlocking it right this second! It'll be ready in about 2 minutes, so you'll have plenty of time before your 2 PM meeting - no worries!",
+            "professional-low-low": "Unlocking in progress. Completion time: 2 minutes.",
+            "professional-low-high": "Unlocking in progress. Completion time: 2 minutes. You will have sufficient time before your 2 PM meeting.",
+            "professional-high-low": "I'm processing the unlock right now. This will take approximately 2 minutes, which gives you plenty of time!",
+            "professional-high-high": "I'm processing the unlock right now. This will take approximately 2 minutes, which gives you plenty of time before your 2 PM meeting. Everything will be okay."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 2,
+            "empathy": 2
+          },
+          "nextNodeId": "response_2_a1_1"
+        },
+        {
+          "id": "opt_2_a1_2",
+          "text": {
+            "friendly-low-low": "I need to verify your identity first. Can you confirm your email?",
+            "friendly-low-high": "I need to verify your identity first. Can you confirm your email address?",
+            "friendly-high-low": "Just need to do a quick identity check first! Can you confirm your email address for me?",
+            "friendly-high-high": "Just need to do a quick identity check first! Can you confirm your email address for me? It'll be super fast!",
+            "professional-low-low": "Identity verification required. Confirm your registered email address.",
+            "professional-low-high": "Identity verification required. Please confirm your registered email address.",
+            "professional-high-low": "For security purposes, I need to verify your identity first. Could you please confirm your registered email address?",
+            "professional-high-high": "For security purposes, I need to verify your identity first. I know you're pressed for time. Could you please confirm your registered email address?"
+          },
+          "scores": {
+            "clarity": 1,
+            "friendly": 1,
+            "empathy": 0
+          },
+          "nextNodeId": "response_2_a1_2"
+        }
+      ]
+    },
+    {
+      "id": "level_2_a2",
+      "level": 2,
+      "options": [
+        {
+          "id": "opt_2_a2_1",
+          "text": {
+            "friendly-low-low": "No need to do anything yet. I found the issue - account is locked. I can unlock it now.",
+            "friendly-low-high": "No need to do anything yet. I found the issue - your account is temporarily locked. I can unlock it right now.",
+            "friendly-high-low": "Nope, just sit tight! I found it - your account got temporarily locked, but I can unlock it right away!",
+            "friendly-high-high": "Nope, just sit tight! I found it - your account got temporarily locked, but I can unlock it right away! You'll be back in soon!",
+            "professional-low-low": "No action needed. Account is temporarily locked. I will unlock it immediately.",
+            "professional-low-high": "No action needed on your end. Account is temporarily locked. I will unlock it immediately.",
+            "professional-high-low": "No action is needed on your end. I've identified the issue - your account is temporarily locked. I can unlock it for you immediately!",
+            "professional-high-high": "No action is needed on your end. I've identified the issue - your account is temporarily locked. Don't worry, I can unlock it for you immediately."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 2,
+            "empathy": 1
+          },
+          "nextNodeId": "response_2_a2_1"
+        },
+        {
+          "id": "opt_2_a2_2",
+          "text": {
+            "friendly-low-low": "Stay available in case I need to verify information.",
+            "friendly-low-high": "Just stay available in case I need to verify some information. Looking into it now.",
+            "friendly-high-low": "Just hang tight in case I need to verify a quick piece of info! Looking into this now!",
+            "friendly-high-high": "Just hang tight in case I need to verify a quick piece of info! I'm looking into this now and we'll have you sorted out!",
+            "professional-low-low": "Remain available for potential identity verification.",
+            "professional-low-high": "Please remain available for potential identity verification. Investigating now.",
+            "professional-high-low": "Please remain available in case I need to verify some information. I'm investigating the issue now!",
+            "professional-high-high": "Please remain available in case I need to verify some information. I know you're anxious, but I'm investigating the issue now."
+          },
+          "scores": {
+            "clarity": 1,
+            "friendly": 0,
+            "empathy": 0
+          },
+          "nextNodeId": "response_2_a2_2"
+        }
+      ]
+    },
+    {
+      "id": "level_2_b1",
+      "level": 2,
+      "options": [
+        {
+          "id": "opt_2_b1_1",
+          "text": {
+            "friendly-low-low": "You didn't do anything wrong. I need to verify your email, then I'll remove the lockout.",
+            "friendly-low-high": "You didn't do anything wrong at all! I just need to verify your email address, then I'll remove the lockout immediately.",
+            "friendly-high-low": "You didn't do anything wrong at all! This is just a safety feature! I just need to verify your email and I'll remove the lockout right away!",
+            "friendly-high-high": "Oh no, you didn't do anything wrong at all! This is just a safety feature, so don't worry! I just need to verify your email address and I'll remove the lockout right away!",
+            "professional-low-low": "No error on your part. Confirm your email, then I will remove the lockout.",
+            "professional-low-high": "No error on your part. This is a security feature. Please confirm your email address for verification.",
+            "professional-high-low": "You haven't done anything wrong - this is simply a security feature. I'll just need to verify your email address!",
+            "professional-high-high": "You haven't done anything wrong - this is simply a security feature, so please don't worry. I'll just need to verify your email address, then I can remove the lockout immediately."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 2,
+            "empathy": 2
+          },
+          "nextNodeId": "response_2_b1_1"
+        },
+        {
+          "id": "opt_2_b1_2",
+          "text": {
+            "friendly-low-low": "I need to verify details first. What's your registered email?",
+            "friendly-low-high": "I need to verify a few details first. What's your registered email address?",
+            "friendly-high-low": "Let me just verify a couple quick details! What's your registered email address?",
+            "friendly-high-high": "Let me just verify a couple quick details! What's your registered email address? It'll be super fast!",
+            "professional-low-low": "I require verification. Provide your registered email address.",
+            "professional-low-high": "I require verification of account details. Please provide your registered email address.",
+            "professional-high-low": "I'll need to verify a few account details first. Could you please provide your registered email address?",
+            "professional-high-high": "I'll need to verify a few account details first. I know you're anxious about time. Could you please provide your registered email address?"
+          },
+          "scores": {
+            "clarity": 1,
+            "friendly": 1,
+            "empathy": 0
+          },
+          "nextNodeId": "response_2_b1_2"
+        }
+      ]
+    },
+    {
+      "id": "level_2_b2",
+      "level": 2,
+      "options": [
+        {
+          "id": "opt_2_b2_1",
+          "text": {
+            "friendly-low-low": "I need your registered email. Once I confirm that, I can unlock within 1-2 minutes.",
+            "friendly-low-high": "I just need your registered email address. Once I confirm that, I can unlock your account within 1-2 minutes.",
+            "friendly-high-low": "Super simple! Just need your registered email address! Once I confirm that, I can have you unlocked within 1-2 minutes!",
+            "friendly-high-high": "Super simple! Just need your registered email address! Once I confirm that, I can have you unlocked and back in within 1-2 minutes!",
+            "professional-low-low": "I need your registered email. Upon confirmation, unlock will complete within 1-2 minutes.",
+            "professional-low-high": "I need your registered email address. Upon confirmation, account unlock will complete within 1-2 minutes.",
+            "professional-high-low": "I'll just need your registered email address for verification. Once confirmed, I can unlock your account within 1-2 minutes!",
+            "professional-high-high": "I'll just need your registered email address for verification. Once confirmed, I can unlock your account within 1-2 minutes. You'll be ready for your meeting."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 2,
+            "empathy": 2
+          },
+          "nextNodeId": "response_2_b2_1"
+        },
+        {
+          "id": "opt_2_b2_2",
+          "text": {
+            "friendly-low-low": "I need your email and the last 4 digits of your phone number.",
+            "friendly-low-high": "I need your email address and the last 4 digits of your phone number on file.",
+            "friendly-high-low": "I'll need your email address and the last 4 digits of your phone number on file - just for security!",
+            "friendly-high-high": "I'll need your email address and the last 4 digits of your phone number on file - just for security! Then we'll get you in!",
+            "professional-low-low": "Required: registered email address and last 4 digits of phone number.",
+            "professional-low-high": "Required verification: registered email address and last 4 digits of registered phone number.",
+            "professional-high-low": "For verification purposes, I'll need your registered email address and the last 4 digits of your phone number on file!",
+            "professional-high-high": "For verification purposes, I'll need your registered email address and the last 4 digits of your phone number on file. I know this feels like extra steps, but it's to protect your account."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 0,
+            "empathy": 0
+          },
+          "nextNodeId": "response_2_b2_2"
+        }
+      ]
+    },
+    {
+      "id": "response_2_a1_1",
+      "type": "ai_response",
+      "content": "Perfect! That's wonderful. What do I need to do once it's unlocked? Will I need to reset my password again?",
+      "nextNodeId": "level_3_a1_1"
+    },
+    {
+      "id": "response_2_a1_2",
+      "type": "ai_response",
+      "content": "Yes, it's sarah.mitchell@email.com. How long will this take after you verify it?",
+      "nextNodeId": "level_3_a1_2"
+    },
+    {
+      "id": "response_2_a2_1",
+      "type": "ai_response",
+      "content": "Oh great! Yes, please unlock it! Will I be able to log in with my old password?",
+      "nextNodeId": "level_3_a2_1"
+    },
+    {
+      "id": "response_2_a2_2",
+      "type": "ai_response",
+      "content": "Okay, I'm here. Just let me know what you need. I'm getting a bit nervous about the time.",
+      "nextNodeId": "level_3_a2_2"
+    },
+    {
+      "id": "response_2_b1_1",
+      "type": "ai_response",
+      "content": "Thank you for saying that! My email is sarah.mitchell@email.com. What happens after you verify it?",
+      "nextNodeId": "level_3_b1_1"
+    },
+    {
+      "id": "response_2_b1_2",
+      "type": "ai_response",
+      "content": "It's sarah.mitchell@email.com. Is that all you need?",
+      "nextNodeId": "level_3_b1_2"
+    },
+    {
+      "id": "response_2_b2_1",
+      "type": "ai_response",
+      "content": "It's sarah.mitchell@email.com. I really appreciate you helping me so quickly!",
+      "nextNodeId": "level_3_b2_1"
+    },
+    {
+      "id": "response_2_b2_2",
+      "type": "ai_response",
+      "content": "Email is sarah.mitchell@email.com and phone ends in 7842. Can we hurry please?",
+      "nextNodeId": "level_3_b2_2"
+    },
+    {
+      "id": "level_3_a1_1",
+      "level": 3,
+      "options": [
+        {
+          "id": "opt_3_a1_1_a",
+          "text": {
+            "friendly-low-low": "You can log in with your existing password. No need to reset.",
+            "friendly-low-high": "Once it's unlocked, you can log in with your existing password. No need to reset it.",
+            "friendly-high-low": "Once it's unlocked, you can log right in with your existing password! No need to reset anything!",
+            "friendly-high-high": "Once it's unlocked, you can log right in with your existing password! No need to reset anything! You'll be all set!",
+            "professional-low-low": "You may log in with your existing password. No reset required.",
+            "professional-low-high": "You may log in with your existing password once unlocked. No reset required.",
+            "professional-high-low": "Once the unlock is complete, you'll be able to log in with your existing password. No password reset will be necessary!",
+            "professional-high-high": "Once the unlock is complete, you'll be able to log in with your existing password. No password reset will be necessary. Everything will work smoothly."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 1,
+            "empathy": 1
+          },
+          "nextNodeId": "end_success_high"
+        },
+        {
+          "id": "opt_3_a1_1_b",
+          "text": {
+            "friendly-low-low": "You can use your existing password. I'm also sending instructions via email.",
+            "friendly-low-high": "You can use your existing password - no reset needed. I'm also sending you instructions via email so you have them for reference.",
+            "friendly-high-low": "You can use your existing password - no reset needed! And I'm sending you super clear instructions via email!",
+            "friendly-high-high": "You can use your existing password - no reset needed! And I'm sending you super clear instructions via email so you have everything you need! You're going to do great in your meeting!",
+            "professional-low-low": "Existing password remains valid. Email instructions being sent.",
+            "professional-low-high": "Existing password remains valid. Email instructions being sent for reference.",
+            "professional-high-low": "You can log in with your existing password - no reset is needed. I'm also sending you detailed instructions via email for your reference!",
+            "professional-high-high": "You can log in with your existing password - no reset is needed. I'm also sending you detailed instructions via email for your reference. You'll be perfectly prepared for your meeting."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 2,
+            "empathy": 2
+          },
+          "nextNodeId": "end_success_very_high"
+        }
+      ]
+    },
+    {
+      "id": "level_3_a1_2",
+      "level": 3,
+      "options": [
+        {
+          "id": "opt_3_a1_2_a",
+          "text": {
+            "friendly-low-low": "That matches. Unlocking now - should be ready in 2 minutes.",
+            "friendly-low-high": "Perfect, that matches. Unlocking now - should be ready in 2 minutes.",
+            "friendly-high-low": "Perfect match! Unlocking it right now - should be all set in 2 minutes!",
+            "friendly-high-high": "Perfect match! Unlocking it right now - should be all set in 2 minutes! You're going to make your meeting with time to spare!",
+            "professional-low-low": "Verified. Unlocking account. Completion time: 2 minutes.",
+            "professional-low-high": "Verified. Unlocking account. Completion time: 2 minutes.",
+            "professional-high-low": "Thank you, that's verified. I'm unlocking your account now. This will be complete within 2 minutes!",
+            "professional-high-high": "Thank you, that's verified. I'm unlocking your account now. This will be complete within 2 minutes. You'll have plenty of time."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 1,
+            "empathy": 1
+          },
+          "nextNodeId": "end_success_high"
+        },
+        {
+          "id": "opt_3_a1_2_b",
+          "text": {
+            "friendly-low-low": "Verified. Unlocking now. Ready in 2 minutes, and I'll send confirmation email.",
+            "friendly-low-high": "Verified! Unlocking right now. It'll be ready in 2 minutes, and I'll send you a confirmation email the moment it's done.",
+            "friendly-high-low": "Verified! Unlocking it right this second! Should be ready in 2 minutes, and I'll send you a confirmation email the instant it's done!",
+            "friendly-high-high": "Verified! Unlocking it right this second! Should be ready in 2 minutes, and I'll send you a confirmation email the instant it's done so you know you're good to go! Deep breath - you've got this!",
+            "professional-low-low": "Verified. Unlocking. Completion: 2 minutes. Confirmation email upon completion.",
+            "professional-low-high": "Verified. Unlocking in progress. Completion: 2 minutes. Confirmation email will be sent upon completion.",
+            "professional-high-low": "Verified successfully. I'm unlocking your account now. It will be ready within 2 minutes, and I'll send you a confirmation email immediately!",
+            "professional-high-high": "Verified successfully. I'm unlocking your account now. It will be ready within 2 minutes, and I'll send you a confirmation email immediately upon completion. You're going to do great."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 2,
+            "empathy": 2
+          },
+          "nextNodeId": "end_success_very_high"
+        }
+      ]
+    },
+    {
+      "id": "level_3_a2_1",
+      "level": 3,
+      "options": [
+        {
+          "id": "opt_3_a2_1_a",
+          "text": {
+            "friendly-low-low": "Yes, your old password will work. Unlocking now.",
+            "friendly-low-high": "Yes, your old password will work once I unlock it. Unlocking now.",
+            "friendly-high-low": "Yes! Your old password will work perfectly once I unlock it! Processing that unlock right now!",
+            "friendly-high-high": "Yes! Your old password will work perfectly once I unlock it! Processing that unlock right now! You'll be back in in no time!",
+            "professional-low-low": "Your existing password will function upon unlock. Processing now.",
+            "professional-low-high": "Confirmed. Your existing password will function upon unlock. Processing now.",
+            "professional-high-low": "Yes, your existing password will work once the unlock is complete. I'm processing that for you now!",
+            "professional-high-high": "Yes, your existing password will work once the unlock is complete. Don't worry, I'm processing that for you now."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 1,
+            "empathy": 1
+          },
+          "nextNodeId": "end_success_high"
+        },
+        {
+          "id": "opt_3_a2_1_b",
+          "text": {
+            "friendly-low-low": "Yes, old password will work. I'm unlocking and will test login before confirming.",
+            "friendly-low-high": "Yes, your old password will work. I'm unlocking it now and will test the login to make sure everything works before I confirm with you.",
+            "friendly-high-low": "Absolutely! Your old password will work just fine! I'm unlocking it right now and I'll test the login to make sure everything's perfect!",
+            "friendly-high-high": "Absolutely! Your old password will work just fine! I'm unlocking it right now and I'll even test the login to make sure everything's perfect before I give you the all-clear! You're going to nail that presentation!",
+            "professional-low-low": "Confirmed. Existing password will function. Unlocking and testing.",
+            "professional-low-high": "Confirmed. Existing password will function. Unlocking and testing login functionality before confirmation.",
+            "professional-high-low": "Yes, your existing password will work. I'm unlocking your account now and will verify login functionality before confirming with you!",
+            "professional-high-high": "Yes, your existing password will work. I'm unlocking your account now and will verify login functionality before confirming with you. You'll be ready for your meeting."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 2,
+            "empathy": 2
+          },
+          "nextNodeId": "end_success_very_high"
+        }
+      ]
+    },
+    {
+      "id": "level_3_a2_2",
+      "level": 3,
+      "options": [
+        {
+          "id": "opt_3_a2_2_a",
+          "text": {
+            "friendly-low-low": "The unlock is processing. Should be complete in under 2 minutes.",
+            "friendly-low-high": "I understand your concern. The unlock is processing now - should be complete in under 2 minutes.",
+            "friendly-high-low": "I totally understand! The unlock is processing right now - you'll be back in under 2 minutes!",
+            "friendly-high-high": "I totally understand! The unlock is processing right now - you'll be back in under 2 minutes, I promise! Take a deep breath!",
+            "professional-low-low": "Unlock processing. Completion time: under 2 minutes.",
+            "professional-low-high": "Understood. Unlock processing. Completion time: under 2 minutes.",
+            "professional-high-low": "I understand your time concern. The unlock is processing now and will be complete in under 2 minutes!",
+            "professional-high-high": "I understand your time concern and your anxiety. The unlock is processing now and will be complete in under 2 minutes. You'll be ready."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 1,
+            "empathy": 2
+          },
+          "nextNodeId": "end_success_high"
+        },
+        {
+          "id": "opt_3_a2_2_b",
+          "text": {
+            "friendly-low-low": "The unlock is almost done - less than 90 seconds. I'll stay until you're logged in.",
+            "friendly-low-high": "I know you're worried about time. The unlock is almost done - less than 90 seconds. I'll stay with you until you're logged in.",
+            "friendly-high-low": "I know you're watching the clock! The unlock is almost done - less than 90 seconds! And I'll stay right here with you until you're logged in!",
+            "friendly-high-high": "I know you're watching the clock! The unlock is almost done - less than 90 seconds! And I'll stay right here with you until you're logged in successfully! You've got plenty of time and you're going to do amazing!",
+            "professional-low-low": "Unlock completion: less than 90 seconds. I will remain until successful login.",
+            "professional-low-high": "Unlock completion: less than 90 seconds. I will remain available until successful login.",
+            "professional-high-low": "I understand your time concern. The unlock will complete in less than 90 seconds, and I'll remain with you until you're logged in successfully!",
+            "professional-high-high": "I understand your time concern and anxiety. The unlock will complete in less than 90 seconds, and I'll remain with you until you're logged in successfully. You're going to do great in your meeting."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 2,
+            "empathy": 2
+          },
+          "nextNodeId": "end_success_very_high"
+        }
+      ]
+    },
+    {
+      "id": "level_3_b1_1",
+      "level": 3,
+      "options": [
+        {
+          "id": "opt_3_b1_1_a",
+          "text": {
+            "friendly-low-low": "After verification, I'll unlock and you can log in with your existing password.",
+            "friendly-low-high": "After verification, I'll unlock your account and you can log in with your existing password.",
+            "friendly-high-low": "After I verify, I'll unlock your account right away and you can log in with your existing password - super easy!",
+            "friendly-high-high": "After I verify, I'll unlock your account right away and you can log in with your existing password - super easy! You'll be all set!",
+            "professional-low-low": "Post-verification, I will unlock. You may log in with existing password.",
+            "professional-low-high": "Post-verification, I will unlock your account. You may log in with your existing password.",
+            "professional-high-low": "After verification, I'll unlock your account immediately. You'll be able to log in with your existing password!",
+            "professional-high-high": "After verification, I'll unlock your account immediately. You'll be able to log in with your existing password. Everything will be fine."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 1,
+            "empathy": 1
+          },
+          "nextNodeId": "end_success_high"
+        },
+        {
+          "id": "opt_3_b1_1_b",
+          "text": {
+            "friendly-low-low": "I'll unlock right away. You can use your existing password, and I'll send confirmation email.",
+            "friendly-low-high": "I'll unlock your account right away. You can use your existing password, and I'll send you a confirmation email with all the details so you're all set.",
+            "friendly-high-low": "I'll unlock your account immediately! You can use your existing password, and I'll send you a confirmation email with all the details!",
+            "friendly-high-high": "I'll unlock your account immediately! You can use your existing password, and I'll send you a confirmation email with all the details so you feel totally confident logging in! You're going to do great!",
+            "professional-low-low": "Account will be unlocked immediately. Existing password valid. Confirmation email will be sent.",
+            "professional-low-high": "Account will be unlocked immediately. Existing password valid. Confirmation email with details will be sent.",
+            "professional-high-low": "I'll unlock your account immediately. You can use your existing password, and I'll send you a confirmation email with all the relevant details!",
+            "professional-high-high": "I'll unlock your account immediately. You can use your existing password, and I'll send you a confirmation email with all the relevant details. You'll be perfectly prepared."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 2,
+            "empathy": 2
+          },
+          "nextNodeId": "end_success_very_high"
+        }
+      ]
+    },
+    {
+      "id": "level_3_b1_2",
+      "level": 3,
+      "options": [
+        {
+          "id": "opt_3_b1_2_a",
+          "text": {
+            "friendly-low-low": "That's all. Unlocking now - will be ready in about 90 seconds.",
+            "friendly-low-high": "That's all I need. Unlocking your account now - will be ready in about 90 seconds.",
+            "friendly-high-low": "That's it! Unlocking your account right now - you'll be all set in about 90 seconds!",
+            "friendly-high-high": "That's it! Unlocking your account right now - you'll be all set in about 90 seconds! Almost there!",
+            "professional-low-low": "Verified. Unlocking account. Completion time: 90 seconds.",
+            "professional-low-high": "Verified. Unlocking account. Completion time: 90 seconds.",
+            "professional-high-low": "That's all I need, thank you. I'm unlocking your account now - it will be ready in approximately 90 seconds!",
+            "professional-high-high": "That's all I need, thank you. I'm unlocking your account now - it will be ready in approximately 90 seconds. You're doing great."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 1,
+            "empathy": 1
+          },
+          "nextNodeId": "end_success_high"
+        },
+        {
+          "id": "opt_3_b1_2_b",
+          "text": {
+            "friendly-low-low": "Yes, that's all! Unlocking now - 90 seconds. I'll send confirmation email too.",
+            "friendly-low-high": "Yes, that's all I need! Unlocking now - 90 seconds and you'll be back in. I'll send you a quick confirmation email too.",
+            "friendly-high-low": "That's perfect! Unlocking right now - 90 seconds and you're back in business! I'll send you a quick confirmation email!",
+            "friendly-high-high": "That's perfect! Unlocking right now - 90 seconds and you're back in business! I'll send you a quick confirmation email so you know everything's good! You've totally got this!",
+            "professional-low-low": "Verified. Unlocking. Completion: 90 seconds. Confirmation email will be sent.",
+            "professional-low-high": "Verified. Unlocking account. Completion: 90 seconds. Confirmation email will be sent.",
+            "professional-high-low": "Yes, that's all I need, thank you. Unlocking your account now - 90 seconds until completion. I'll send you a confirmation email as well!",
+            "professional-high-high": "Yes, that's all I need, thank you. Unlocking your account now - 90 seconds until completion. I'll send you a confirmation email as well. You'll be ready for your meeting."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 2,
+            "empathy": 2
+          },
+          "nextNodeId": "end_success_very_high"
+        }
+      ]
+    },
+    {
+      "id": "level_3_b2_1",
+      "level": 3,
+      "options": [
+        {
+          "id": "opt_3_b2_1_a",
+          "text": {
+            "friendly-low-low": "Of course. Account verified and unlocking now. Login access within 60 seconds.",
+            "friendly-low-high": "Of course! Account verified and unlocking now. You'll be able to log in within 60 seconds.",
+            "friendly-high-low": "Of course! Account verified and unlocking right now! You'll be able to log in within 60 seconds!",
+            "friendly-high-high": "Of course! Account verified and unlocking right now! You'll be able to log in within 60 seconds! You're going to do amazing in your meeting!",
+            "professional-low-low": "Verified. Unlocking. Login access: 60 seconds.",
+            "professional-low-high": "Verified. Unlocking in progress. Login access: 60 seconds.",
+            "professional-high-low": "You're welcome! Your account is verified and unlocking now. You'll be able to log in within 60 seconds!",
+            "professional-high-high": "You're welcome! Your account is verified and unlocking now. You'll be able to log in within 60 seconds. You'll do wonderfully in your meeting."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 2,
+            "empathy": 2
+          },
+          "nextNodeId": "end_success_very_high"
+        },
+        {
+          "id": "opt_3_b2_1_b",
+          "text": {
+            "friendly-low-low": "Happy to help. Verified and unlocking. 60 seconds and you're in.",
+            "friendly-low-high": "Happy to help! Verified and unlocking. 60 seconds and you're in.",
+            "friendly-high-low": "My pleasure! All verified and unlocking right now! 60 seconds and you're back in!",
+            "friendly-high-high": "My pleasure! All verified and unlocking right now! 60 seconds and you're back in! Deep breath - you've got this!",
+            "professional-low-low": "Verified. Unlocking. Login access in 60 seconds.",
+            "professional-low-high": "Verified. Unlocking. Login access in 60 seconds.",
+            "professional-high-low": "It's my pleasure to help! Your account is verified and unlocking. You'll have access within 60 seconds!",
+            "professional-high-high": "It's my pleasure to help! Your account is verified and unlocking. You'll have access within 60 seconds. Everything will be fine."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 1,
+            "empathy": 1
+          },
+          "nextNodeId": "end_success_high"
+        }
+      ]
+    },
+    {
+      "id": "level_3_b2_2",
+      "level": 3,
+      "options": [
+        {
+          "id": "opt_3_b2_2_a",
+          "text": {
+            "friendly-low-low": "All verified. Unlocking now - 60 seconds and you'll have access.",
+            "friendly-low-high": "All verified. Unlocking now - 60 seconds and you'll have access.",
+            "friendly-high-low": "Perfect! All verified! Unlocking right now - 60 seconds and you're in!",
+            "friendly-high-high": "Perfect! All verified! Unlocking right now - 60 seconds and you're in! Almost there!",
+            "professional-low-low": "Verified. Unlocking. Access in 60 seconds.",
+            "professional-low-high": "Verified. Unlocking. Access in 60 seconds.",
+            "professional-high-low": "Everything is verified. I'm unlocking your account now - you'll have access within 60 seconds!",
+            "professional-high-high": "Everything is verified. I'm unlocking your account now - you'll have access within 60 seconds. You're doing great."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 1,
+            "empathy": 1
+          },
+          "nextNodeId": "end_success_high"
+        },
+        {
+          "id": "opt_3_b2_2_b",
+          "text": {
+            "friendly-low-low": "I understand. Verified - unlocking now. 45 seconds. You'll make your meeting.",
+            "friendly-low-high": "I understand the urgency. Everything's verified - unlocking now. 45 seconds and I'll confirm you're all set. You'll make your meeting with time to spare.",
+            "friendly-high-low": "I completely understand! Everything's verified - unlocking right now! 45 seconds and I'll confirm you're all set! You're going to make your meeting with time to spare!",
+            "friendly-high-high": "I completely understand! Everything's verified - unlocking right now! 45 seconds and I'll confirm you're all set! You're going to make your meeting with time to spare, and you're going to do AMAZING!",
+            "professional-low-low": "Verified. Expedited unlock. 45 seconds. Sufficient time for meeting.",
+            "professional-low-high": "Verified. Expedited unlock in progress. 45 seconds. You will have sufficient time for your meeting.",
+            "professional-high-low": "I understand the urgency. Everything is verified and I'm unlocking your account now. 45 seconds and I'll confirm you're ready. You'll have plenty of time!",
+            "professional-high-high": "I understand the urgency and your anxiety. Everything is verified and I'm unlocking your account now. 45 seconds and I'll confirm you're ready. You'll have plenty of time before your meeting, and you're going to do great."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 2,
+            "empathy": 2
+          },
+          "nextNodeId": "end_success_very_high"
+        }
+      ]
+    },
+    {
+      "id": "end_success_very_high",
+      "type": "ai_response",
+      "content": "Thank you SO much! You've been incredibly helpful and I feel so much better now. I really appreciate your patience and clear instructions!",
+      "nextNodeId": "complete"
+    },
+    {
+      "id": "end_success_high",
+      "type": "ai_response",
+      "content": "Thank you so much for your help! I really appreciate it. I feel much more relieved now.",
+      "nextNodeId": "complete"
+    }
+  ]
+}

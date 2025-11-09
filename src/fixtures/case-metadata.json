@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "personaName": "Marcus",
+    "personaRole": "Technical User",
+    "callId": "847293",
+    "service": "Technical Support",
+    "subject": "System Outage",
+    "notes": "Client reports critical system outage affecting their operations. High technical knowledge, expects detailed technical responses.",
+    "oceanTraits": {
+      "openness": 75,
+      "conscientiousness": 85,
+      "extraversion": 40,
+      "agreeableness": 50,
+      "neuroticism": 60
+    },
+    "primaryTrait": "conscientiousness",
+    "secondaryTrait": "openness"
+  },
+  "initialMessages": {
+    "systemMessage": "You are speaking with Marcus, a technical user experiencing a critical system outage. He has high technical knowledge and expects detailed, accurate information. Your goal is to communicate clearly, provide technical solutions, and manage the situation professionally.",
+    "initialMessage": {
+      "role": "ai",
+      "content": "Hi, this is Marcus from DevOps at TechCorp. We're experiencing a complete system outage - case #847293. Our entire production environment has been down for 15 minutes. I need immediate assistance."
+    }
+  }
+}

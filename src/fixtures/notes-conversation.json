@@ -1,0 +1,772 @@
+{
+  "conversationTree": [
+    {
+      "id": "start",
+      "level": 0,
+      "options": [
+        {
+          "id": "opt_0_a",
+          "text": {
+            "friendly-low-low": "I see this is happening again. Let me review your cases and find a solution.",
+            "friendly-low-high": "I apologize that this is happening again. Let me review your previous cases thoroughly and find a permanent solution.",
+            "friendly-high-low": "I'm really sorry you're dealing with this again. Let me pull up your previous cases and figure out a real solution for you.",
+            "friendly-high-high": "I'm so sorry you're dealing with this again! That's really frustrating. Let me pull up your previous cases right now and figure out a real, permanent solution for you!",
+            "professional-low-low": "I will review your case history and implement a resolution.",
+            "professional-low-high": "I apologize for the recurring issue. I will review your case history systematically and implement a permanent resolution.",
+            "professional-high-low": "I sincerely apologize that you're experiencing this issue again. Let me review your previous cases and work toward a permanent solution.",
+            "professional-high-high": "I sincerely apologize that you're experiencing this issue again. Let me review your previous cases immediately and work toward a comprehensive permanent solution."
+          },
+          "scores": {
+            "clarity": 1,
+            "friendly": 2,
+            "empathy": 2
+          },
+          "nextNodeId": "response_0_a"
+        },
+        {
+          "id": "opt_0_b",
+          "text": {
+            "friendly-low-low": "I see you've contacted us twice before. Tell me what troubleshooting you've tried.",
+            "friendly-low-high": "I see you've contacted us twice before about this. Can you tell me exactly what troubleshooting steps you've already tried?",
+            "friendly-high-low": "I can see you've been through this twice already - that must be annoying! Can you walk me through what troubleshooting steps you've already tried?",
+            "friendly-high-high": "I can see you've been through this twice already - that must be so annoying! Can you walk me through what troubleshooting steps you've already tried so we don't waste your time?",
+            "professional-low-low": "I note two previous contacts. Detail the troubleshooting steps completed.",
+            "professional-low-high": "I note two previous contacts regarding this issue. Please provide a detailed list of the troubleshooting steps you have already completed.",
+            "professional-high-low": "I can see you've contacted us twice previously about this issue. To avoid repeating steps, could you please tell me what troubleshooting you've already completed?",
+            "professional-high-high": "I can see you've contacted us twice previously about this issue. To avoid repeating steps and respect your time, could you please provide a detailed account of what troubleshooting you've already completed?"
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 0,
+            "empathy": 1
+          },
+          "nextNodeId": "response_0_b"
+        }
+      ]
+    },
+    {
+      "id": "response_0_a",
+      "type": "ai_response",
+      "content": "Thank you for acknowledging that. The last rep had me reset the device and reinstall the software. Worked for a week, then the same freezing started again. I need this to actually be fixed this time.",
+      "nextNodeId": "level_1_a"
+    },
+    {
+      "id": "response_0_b",
+      "type": "ai_response",
+      "content": "I've done everything - cache clearing, software reinstall, factory reset, updated firmware. Everything you could possibly suggest. The problem keeps coming back after about a week. This is clearly a deeper issue.",
+      "nextNodeId": "level_1_b"
+    },
+    {
+      "id": "level_1_a",
+      "level": 1,
+      "options": [
+        {
+          "id": "opt_1_a1",
+          "text": {
+            "friendly-low-low": "This sounds like a hardware issue. I'd like to arrange a replacement device.",
+            "friendly-low-high": "Based on your history, this sounds like a hardware issue, not software. I'd like to arrange a replacement device for you with detailed tracking.",
+            "friendly-high-low": "I understand that must be frustrating. Looking at your history, this really sounds like a hardware problem. Let me get you a replacement device right away!",
+            "friendly-high-high": "That's so frustrating, and I totally get why you're upset! Looking at your history, this really sounds like a hardware problem, not software. Let me get you a replacement device right away with full documentation!",
+            "professional-low-low": "This indicates a hardware defect. I recommend a device replacement.",
+            "professional-low-high": "Given the recurring nature despite software solutions, this indicates a hardware defect. I recommend a device replacement with complete case documentation.",
+            "professional-high-low": "I understand your frustration. Based on your case history, this appears to be a hardware issue rather than software. I'd like to arrange a replacement device for you.",
+            "professional-high-high": "I understand your frustration. Based on your comprehensive case history, this appears to be a hardware issue rather than software. I'd like to arrange a replacement device for you with detailed tracking and documentation."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 2,
+            "empathy": 2
+          },
+          "nextNodeId": "response_1_a1"
+        },
+        {
+          "id": "opt_1_a2",
+          "text": {
+            "friendly-low-low": "Let me try a different approach. Have you checked if your device is overheating?",
+            "friendly-low-high": "Let me try a different approach with specific diagnostics. Have you checked if your device is overheating during use?",
+            "friendly-high-low": "Okay, let me think outside the box here! Have you noticed if your device is getting hot or overheating when you use it?",
+            "friendly-high-high": "Okay, let me think outside the box here! Have you noticed if your device is getting hot or overheating when you use it? I want to check a specific theory!",
+            "professional-low-low": "Let me investigate an alternative cause. Have you observed device overheating?",
+            "professional-low-high": "Let me investigate an alternative cause with specific parameters. Have you observed device overheating during operation, and if so, at what temperature range?",
+            "professional-high-low": "Let me approach this from a different angle. Have you noticed whether your device overheats during use?",
+            "professional-high-high": "Let me approach this from a different diagnostic angle. Have you noticed whether your device overheats during use, and if so, could you describe the specific conditions when this occurs?"
+          },
+          "scores": {
+            "clarity": 1,
+            "friendly": 0,
+            "empathy": 0
+          },
+          "nextNodeId": "response_1_a2"
+        }
+      ]
+    },
+    {
+      "id": "level_1_b",
+      "level": 1,
+      "options": [
+        {
+          "id": "opt_1_b1",
+          "text": {
+            "friendly-low-low": "You're right - this is a deeper issue. This is a hardware defect. I'd like to send you a replacement.",
+            "friendly-low-high": "You're absolutely right - this is a deeper issue. Given everything you've tried, I believe this is a hardware defect. I'd like to send you a replacement device with full documentation.",
+            "friendly-high-low": "You're totally right - this is definitely a bigger problem! You've tried everything, and I think we're looking at a hardware defect here. Let me send you a replacement device right away!",
+            "friendly-high-high": "You're totally right - this is definitely a bigger problem! You've tried everything, and I think we're looking at a hardware defect here. Let me send you a replacement device right away with complete tracking!",
+            "professional-low-low": "Your assessment is correct. The symptoms indicate a hardware defect. I recommend device replacement.",
+            "professional-low-high": "Your assessment is correct. The symptoms and your comprehensive troubleshooting history indicate a hardware defect. I recommend immediate device replacement with full case documentation.",
+            "professional-high-low": "You're absolutely correct - this is a deeper issue. Given all the troubleshooting you've completed, this appears to be a hardware defect. I'd like to send you a replacement device.",
+            "professional-high-high": "You're absolutely correct - this is a deeper issue. Given all the comprehensive troubleshooting you've completed, this appears to be a hardware defect. I'd like to send you a replacement device with complete documentation and tracking."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 2,
+            "empathy": 2
+          },
+          "nextNodeId": "response_1_b1"
+        },
+        {
+          "id": "opt_1_b2",
+          "text": {
+            "friendly-low-low": "I appreciate the troubleshooting you've done. Let me escalate to technical team.",
+            "friendly-low-high": "I appreciate all the troubleshooting you've done. Let me escalate this to our technical team for advanced diagnostics with your complete case history.",
+            "friendly-high-low": "Wow, you've really been thorough with all that! Let me escalate this to our technical team right now for some advanced diagnostics!",
+            "friendly-high-high": "Wow, you've really been thorough with all that! Let me escalate this to our technical team right now for some advanced diagnostics with your full case history!",
+            "professional-low-low": "I acknowledge your troubleshooting. I will escalate to technical team.",
+            "professional-low-high": "I acknowledge your comprehensive troubleshooting efforts. I will escalate to the technical team for advanced diagnostics with complete case documentation.",
+            "professional-high-low": "I appreciate the thorough troubleshooting you've completed. Let me escalate this to our technical team for advanced diagnostics.",
+            "professional-high-high": "I appreciate the thorough troubleshooting you've completed. Let me escalate this to our technical team for advanced diagnostics with your complete case history and documentation."
+          },
+          "scores": {
+            "clarity": 1,
+            "friendly": 1,
+            "empathy": 1
+          },
+          "nextNodeId": "response_1_b2"
+        }
+      ]
+    },
+    {
+      "id": "response_1_a1",
+      "type": "ai_response",
+      "content": "Finally! Yes, a replacement makes sense. How long will that take? And will this replacement actually be fixed, or am I going to have the same problem again?",
+      "nextNodeId": "level_2_a1"
+    },
+    {
+      "id": "response_1_a2",
+      "type": "ai_response",
+      "content": "Overheating? No, I haven't noticed that. But honestly, I've already spent hours troubleshooting this. Can we move toward an actual solution instead of more diagnostic questions?",
+      "nextNodeId": "level_2_a2"
+    },
+    {
+      "id": "response_1_b1",
+      "type": "ai_response",
+      "content": "Good. A replacement is what should have happened after the second complaint. What's the process and how long will it take?",
+      "nextNodeId": "level_2_b1"
+    },
+    {
+      "id": "response_1_b2",
+      "type": "ai_response",
+      "content": "Escalate to technical team? I've already been through this twice. How long will that take, and what makes you think they'll find something different?",
+      "nextNodeId": "level_2_b2"
+    },
+    {
+      "id": "level_2_a1",
+      "level": 2,
+      "options": [
+        {
+          "id": "opt_2_a1_1",
+          "text": {
+            "friendly-low-low": "Replacement ships within 24 hours. This will be from a newer batch with a fix for the freezing issue.",
+            "friendly-low-high": "The replacement will ship within 24 hours via expedited delivery. This will be from a newer production batch that has a documented fix for this specific freezing issue.",
+            "friendly-high-low": "The replacement ships within 24 hours! And here's the best part - it's from a newer production batch that has the actual fix for this freezing issue built in!",
+            "friendly-high-high": "The replacement ships within 24 hours! And here's the best part - it's from a newer production batch that has the actual fix for this freezing issue built in! I'll send you complete tracking details and documentation!",
+            "professional-low-low": "Replacement shipment: 24 hours. Unit from revised batch with issue resolution.",
+            "professional-low-high": "Replacement shipment: 24 hours via expedited delivery. Unit will be from revised production batch with documented freezing issue resolution implemented. Complete tracking information will be provided.",
+            "professional-high-low": "Your replacement will ship within 24 hours. It will be from a newer production batch that has the fix for this specific freezing issue implemented.",
+            "professional-high-high": "Your replacement will ship within 24 hours with expedited delivery. It will be from a newer production batch that has the documented fix for this specific freezing issue implemented. I'll provide complete tracking details and case documentation."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 2,
+            "empathy": 2
+          },
+          "nextNodeId": "response_2_a1_1"
+        },
+        {
+          "id": "opt_2_a1_2",
+          "text": {
+            "friendly-low-low": "I can ship a replacement within 2-3 days. I can't guarantee no issues, but we'll provide extended warranty.",
+            "friendly-low-high": "I can have a replacement shipped within 2-3 business days with tracking. I can't guarantee it won't have issues, but we'll provide extended warranty coverage for your peace of mind.",
+            "friendly-high-low": "I can get a replacement shipped to you within 2-3 business days! I can't 100% guarantee no issues, but I'll make sure you get extended warranty coverage just in case!",
+            "friendly-high-high": "I can get a replacement shipped to you within 2-3 business days with full tracking! I can't 100% guarantee no issues, but I'll make sure you get extended warranty coverage and priority support just in case!",
+            "professional-low-low": "Replacement shipment: 2-3 business days. Extended warranty will be applied.",
+            "professional-low-high": "Replacement shipment: 2-3 business days with tracking confirmation. Extended warranty coverage will be applied as assurance. Complete documentation will be provided.",
+            "professional-high-low": "I can arrange for a replacement to ship within 2-3 business days. While I cannot guarantee it will be issue-free, I will provide extended warranty coverage for your peace of mind.",
+            "professional-high-high": "I can arrange for a replacement to ship within 2-3 business days with complete tracking. While I cannot guarantee it will be issue-free, I will provide extended warranty coverage and priority support access for your peace of mind."
+          },
+          "scores": {
+            "clarity": 1,
+            "friendly": 1,
+            "empathy": 1
+          },
+          "nextNodeId": "response_2_a1_2"
+        }
+      ]
+    },
+    {
+      "id": "level_2_a2",
+      "level": 2,
+      "options": [
+        {
+          "id": "opt_2_a2_1",
+          "text": {
+            "friendly-low-low": "You're right. Let me arrange a device replacement for you now.",
+            "friendly-low-high": "You're right, I apologize. You've done more than enough. Let me arrange a device replacement for you right now with complete documentation.",
+            "friendly-high-low": "You're absolutely right, and I'm sorry! You've done more than enough. Let me arrange a device replacement for you right this second!",
+            "friendly-high-high": "You're absolutely right, and I'm sorry! You've done more than enough troubleshooting. Let me arrange a device replacement for you right this second with full tracking and support!",
+            "professional-low-low": "You are correct. I will arrange device replacement immediately.",
+            "professional-low-high": "You are correct. I apologize. I will arrange device replacement immediately with complete case documentation.",
+            "professional-high-low": "You're absolutely right, and I apologize for that. You've done extensive troubleshooting already. Let me arrange a device replacement for you immediately.",
+            "professional-high-high": "You're absolutely right, and I apologize for that. You've done extensive troubleshooting already. Let me arrange a device replacement for you immediately with complete tracking and documentation."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 2,
+            "empathy": 2
+          },
+          "nextNodeId": "response_2_a2_1"
+        },
+        {
+          "id": "opt_2_a2_2",
+          "text": {
+            "friendly-low-low": "I understand. Let me check if we can repair your device instead.",
+            "friendly-low-high": "I understand. Let me check if we can repair your current device instead of going through more troubleshooting, with a detailed repair timeline.",
+            "friendly-high-low": "I totally get it! Let me see if we can get your current device repaired instead of putting you through more questions!",
+            "friendly-high-high": "I totally get it! Let me see if we can get your current device repaired instead of putting you through more questions! I'll get you a detailed timeline!",
+            "professional-low-low": "Understood. I will investigate repair options.",
+            "professional-low-high": "Understood. I will investigate in-device repair options as an alternative to continued troubleshooting, with detailed timeline and process documentation.",
+            "professional-high-low": "I understand your frustration. Let me explore whether we can repair your current device rather than continuing with troubleshooting.",
+            "professional-high-high": "I understand your frustration. Let me explore whether we can repair your current device rather than continuing with troubleshooting, and I'll provide you with a detailed timeline and process outline."
+          },
+          "scores": {
+            "clarity": 1,
+            "friendly": 1,
+            "empathy": 1
+          },
+          "nextNodeId": "response_2_a2_2"
+        }
+      ]
+    },
+    {
+      "id": "level_2_b1",
+      "level": 2,
+      "options": [
+        {
+          "id": "opt_2_b1_1",
+          "text": {
+            "friendly-low-low": "You're right that this should have been done sooner. I'll expedite shipping - 24 hours. Prepaid return label included.",
+            "friendly-low-high": "You're right that this should have been done sooner. I'll expedite shipping - you'll have it in 24 hours with tracking. I'm also including a prepaid return label with detailed instructions for your defective unit.",
+            "friendly-high-low": "You're absolutely right, and I'm really sorry about that! I'm expediting the shipping - you'll have it within 24 hours! Plus I'm including a prepaid return label so sending back the defective one is super easy!",
+            "friendly-high-high": "You're absolutely right, and I'm really sorry about that! I'm expediting the shipping - you'll have it within 24 hours with full tracking! Plus I'm including a prepaid return label with detailed instructions so sending back the defective one is super easy!",
+            "professional-low-low": "Acknowledged. Expedited shipping: 24 hours. Prepaid return label included.",
+            "professional-low-high": "Acknowledged. Expedited shipping: 24 hours with tracking confirmation. Prepaid return label included with detailed return instructions for defective unit.",
+            "professional-high-low": "You're correct, and I apologize this wasn't done sooner. I'm expediting the shipment - you'll receive it within 24 hours. I'm also including a prepaid return label for your defective unit.",
+            "professional-high-high": "You're correct, and I apologize this wasn't done sooner. I'm expediting the shipment - you'll receive it within 24 hours with complete tracking. I'm also including a prepaid return label with detailed instructions for your defective unit."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 2,
+            "empathy": 2
+          },
+          "nextNodeId": "response_2_b1_1"
+        },
+        {
+          "id": "opt_2_b1_2",
+          "text": {
+            "friendly-low-low": "Standard shipping is 3-5 days. I'll send you a prepaid label for the defective device.",
+            "friendly-low-high": "Standard shipping is 3-5 business days with tracking. I'll send you a prepaid label with detailed instructions to return the defective device.",
+            "friendly-high-low": "Standard shipping will be 3-5 business days! And I'll send you a prepaid label so you can send back the defective one hassle-free!",
+            "friendly-high-high": "Standard shipping will be 3-5 business days with full tracking! And I'll send you a prepaid label with clear instructions so you can send back the defective one hassle-free!",
+            "professional-low-low": "Standard shipping: 3-5 business days. Prepaid return label will be provided.",
+            "professional-low-high": "Standard shipping: 3-5 business days with tracking confirmation. Prepaid return label will be provided with detailed return instructions.",
+            "professional-high-low": "The standard shipping timeframe is 3-5 business days. I'll provide a prepaid return label for your defective device.",
+            "professional-high-high": "The standard shipping timeframe is 3-5 business days with tracking. I'll provide a prepaid return label with detailed instructions for your defective device."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 1,
+            "empathy": 0
+          },
+          "nextNodeId": "response_2_b1_2"
+        }
+      ]
+    },
+    {
+      "id": "level_2_b2",
+      "level": 2,
+      "options": [
+        {
+          "id": "opt_2_b2_1",
+          "text": {
+            "friendly-low-low": "You're right. Let me skip the escalation and arrange a replacement device instead.",
+            "friendly-low-high": "You're right to question that. Let me skip the escalation and arrange a replacement device for you instead, with complete tracking.",
+            "friendly-high-low": "You know what? You're totally right. Let me skip the escalation and just get you a replacement device right away instead!",
+            "friendly-high-high": "You know what? You're totally right. Let me skip the escalation and just get you a replacement device right away instead with full documentation!",
+            "professional-low-low": "Valid concern. I will proceed directly to device replacement.",
+            "professional-low-high": "Valid concern. I will proceed directly to device replacement instead of escalation, with complete case documentation.",
+            "professional-high-low": "You raise a valid point. Let me bypass the escalation process and arrange a replacement device for you instead.",
+            "professional-high-high": "You raise a valid point. Let me bypass the escalation process and arrange a replacement device for you instead with complete tracking and documentation."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 2,
+            "empathy": 2
+          },
+          "nextNodeId": "response_2_b2_1"
+        },
+        {
+          "id": "opt_2_b2_2",
+          "text": {
+            "friendly-low-low": "The technical team has specialized tools for manufacturing defects. Takes 2-3 days.",
+            "friendly-low-high": "The technical team has specialized diagnostic tools that can identify manufacturing defects not visible through standard troubleshooting. This typically takes 2-3 days with detailed reporting.",
+            "friendly-high-low": "The technical team actually has specialized tools that can dig deeper and find manufacturing defects! It usually takes about 2-3 days for them to analyze it!",
+            "friendly-high-high": "The technical team actually has specialized tools that can dig deeper and find manufacturing defects! It usually takes about 2-3 days for them to analyze it thoroughly and provide a detailed report!",
+            "professional-low-low": "Technical team utilizes specialized diagnostics. Timeline: 2-3 days.",
+            "professional-low-high": "Technical team utilizes specialized diagnostics for manufacturing defect identification not accessible through standard procedures. Timeline: 2-3 days with comprehensive analysis report.",
+            "professional-high-low": "Our technical team has specialized diagnostic tools that can identify manufacturing defects not visible through standard troubleshooting. This analysis typically takes 2-3 days.",
+            "professional-high-high": "Our technical team has specialized diagnostic tools that can identify manufacturing defects not visible through standard troubleshooting. This comprehensive analysis typically takes 2-3 days with detailed reporting."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 0,
+            "empathy": 0
+          },
+          "nextNodeId": "response_2_b2_2"
+        }
+      ]
+    },
+    {
+      "id": "response_2_a1_1",
+      "type": "ai_response",
+      "content": "Okay, that actually sounds promising. A fix in the newer batch makes sense. Will I need to transfer all my data, or can that be done automatically?",
+      "nextNodeId": "level_3_a1_1"
+    },
+    {
+      "id": "response_2_a1_2",
+      "type": "ai_response",
+      "content": "Extended warranty is nice, but I'd rather just have a device that works properly the first time. Is there any way to expedite the shipping?",
+      "nextNodeId": "level_3_a1_2"
+    },
+    {
+      "id": "response_2_a2_1",
+      "type": "ai_response",
+      "content": "Thank you for understanding. How quickly can you get the replacement to me?",
+      "nextNodeId": "level_3_a2_1"
+    },
+    {
+      "id": "response_2_a2_2",
+      "type": "ai_response",
+      "content": "Repair? How long would a repair take? At this point, I'd rather just have a new device that works.",
+      "nextNodeId": "level_3_a2_2"
+    },
+    {
+      "id": "response_2_b1_1",
+      "type": "ai_response",
+      "content": "Okay, that's much better. 24 hours I can work with. Will this new unit actually be fixed, or is it the same model with the same defect?",
+      "nextNodeId": "level_3_b1_1"
+    },
+    {
+      "id": "response_2_b1_2",
+      "type": "ai_response",
+      "content": "3-5 days is pretty slow for someone who's already been dealing with this for weeks. Can you do any better than that?",
+      "nextNodeId": "level_3_b1_2"
+    },
+    {
+      "id": "response_2_b2_1",
+      "type": "ai_response",
+      "content": "Good decision. How soon can the replacement arrive?",
+      "nextNodeId": "level_3_b2_1"
+    },
+    {
+      "id": "response_2_b2_2",
+      "type": "ai_response",
+      "content": "2-3 days to analyze it, then what? More waiting? I've already lost weeks dealing with this. I need a faster solution.",
+      "nextNodeId": "level_3_b2_2"
+    },
+    {
+      "id": "level_3_a1_1",
+      "level": 3,
+      "options": [
+        {
+          "id": "opt_3_a1_1_a",
+          "text": {
+            "friendly-low-low": "We have a data transfer tool that makes it automatic. Instructions included.",
+            "friendly-low-high": "We have an automated data transfer tool that handles this for you. I'll include step-by-step instructions with your new device, along with support contact information.",
+            "friendly-high-low": "Great question! We have a super easy data transfer tool that does it automatically! I'll include step-by-step instructions with your new device!",
+            "friendly-high-high": "Great question! We have a super easy data transfer tool that does it automatically! I'll include detailed step-by-step instructions with your new device, plus my direct contact if you need help!",
+            "professional-low-low": "Automated data transfer tool available. Instructions will be included.",
+            "professional-low-high": "Automated data transfer tool available with comprehensive functionality. Detailed instructions will be included with replacement device, along with technical support contact information.",
+            "professional-high-low": "We have an automated data transfer tool that will handle this for you. I'll include detailed instructions with your replacement device.",
+            "professional-high-high": "We have an automated data transfer tool that will handle this for you. I'll include comprehensive detailed instructions with your replacement device, along with direct support contact information."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 1,
+            "empathy": 1
+          },
+          "nextNodeId": "end_success_high"
+        },
+        {
+          "id": "opt_3_a1_1_b",
+          "text": {
+            "friendly-low-low": "Data transfer is automatic, takes about 5 minutes. I'll send you a guide via email.",
+            "friendly-low-high": "The data transfer is automatic and takes about 5 minutes. I'll send you a comprehensive guide via email right now, and I'm here if you need any help during the transfer.",
+            "friendly-high-low": "The data transfer is totally automatic and super quick - about 5 minutes! I'll send you a guide via email right now, and I'm totally here if you need any help!",
+            "friendly-high-high": "The data transfer is totally automatic and super quick - about 5 minutes! I'll send you a detailed guide via email right now, and I'm totally here if you need any help when you're doing the transfer! Plus here's my direct line!",
+            "professional-low-low": "Automated data transfer: approximately 5 minutes. Email guide being sent.",
+            "professional-low-high": "Automated data transfer: approximately 5 minutes. Comprehensive email guide being sent with detailed steps. Support available during transfer process with direct contact information.",
+            "professional-high-low": "The data transfer is automatic and takes approximately 5 minutes. I'm sending you a comprehensive guide via email right now, and I'm available to assist if you need any help during the transfer.",
+            "professional-high-high": "The data transfer is automatic and takes approximately 5 minutes. I'm sending you a comprehensive detailed guide via email right now, and I'm available to assist if you need any help during the transfer. Here's my direct contact information."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 2,
+            "empathy": 2
+          },
+          "nextNodeId": "end_success_very_high"
+        }
+      ]
+    },
+    {
+      "id": "level_3_a1_2",
+      "level": 3,
+      "options": [
+        {
+          "id": "opt_3_a1_2_a",
+          "text": {
+            "friendly-low-low": "I understand. Let me upgrade you to expedited shipping at no charge - you'll have it tomorrow.",
+            "friendly-low-high": "I completely understand. Let me upgrade you to expedited shipping at no charge - you'll have it tomorrow with full tracking and confirmation.",
+            "friendly-high-low": "I totally get it! Let me upgrade you to expedited shipping at no extra charge - you'll have it tomorrow!",
+            "friendly-high-high": "I totally get it! Let me upgrade you to expedited shipping at no extra charge - you'll have it tomorrow with complete tracking!",
+            "professional-low-low": "Understood. Upgrading to expedited shipping at no charge. Delivery: tomorrow.",
+            "professional-low-high": "Understood. Upgrading to expedited shipping at no additional cost. Delivery: tomorrow with complete tracking and confirmation details.",
+            "professional-high-low": "I completely understand. I'm upgrading you to expedited shipping at no additional cost - you'll receive it tomorrow.",
+            "professional-high-high": "I completely understand. I'm upgrading you to expedited shipping at no additional cost - you'll receive it tomorrow with full tracking and delivery confirmation."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 2,
+            "empathy": 2
+          },
+          "nextNodeId": "end_success_very_high"
+        },
+        {
+          "id": "opt_3_a1_2_b",
+          "text": {
+            "friendly-low-low": "I can upgrade to 2-day shipping for $15, or keep the 3-day standard free.",
+            "friendly-low-high": "I can upgrade to 2-day shipping for a $15 fee with tracking, or we can stick with the complimentary 3-day standard shipping.",
+            "friendly-high-low": "I can upgrade you to 2-day shipping! There's a $15 fee for that, or we can stick with the free 3-day standard shipping!",
+            "friendly-high-high": "I can upgrade you to 2-day shipping with tracking! There's a $15 fee for that, or we can stick with the free 3-day standard shipping - your choice!",
+            "professional-low-low": "Expedited 2-day shipping available for $15, or complimentary 3-day standard.",
+            "professional-low-high": "Expedited 2-day shipping available for $15 with tracking confirmation, or complimentary 3-day standard shipping with standard tracking.",
+            "professional-high-low": "I can offer expedited 2-day shipping for $15, or maintain the complimentary 3-day standard shipping.",
+            "professional-high-high": "I can offer expedited 2-day shipping for $15 with complete tracking, or maintain the complimentary 3-day standard shipping with standard tracking."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 0,
+            "empathy": 0
+          },
+          "nextNodeId": "end_success_medium"
+        }
+      ]
+    },
+    {
+      "id": "level_3_a2_1",
+      "level": 3,
+      "options": [
+        {
+          "id": "opt_3_a2_1_a",
+          "text": {
+            "friendly-low-low": "I can have it shipped to you within 24 hours.",
+            "friendly-low-high": "I can have it shipped to you within 24 hours with expedited delivery and full tracking.",
+            "friendly-high-low": "I can have it shipped to you within 24 hours with expedited delivery!",
+            "friendly-high-high": "I can have it shipped to you within 24 hours with expedited delivery and complete tracking information!",
+            "professional-low-low": "Expedited delivery: 24 hours.",
+            "professional-low-high": "Expedited delivery: 24 hours with complete tracking and delivery confirmation.",
+            "professional-high-low": "I can arrange expedited shipping and have it delivered to you within 24 hours.",
+            "professional-high-high": "I can arrange expedited shipping and have it delivered to you within 24 hours with complete tracking and delivery confirmation."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 1,
+            "empathy": 1
+          },
+          "nextNodeId": "end_success_high"
+        },
+        {
+          "id": "opt_3_a2_1_b",
+          "text": {
+            "friendly-low-low": "I'll ship it overnight - you'll receive it tomorrow. I'm also adding 6 months premium support at no cost.",
+            "friendly-low-high": "I'll have it shipped overnight - you'll receive it tomorrow with full tracking. I'm also adding 6 months of premium support at no cost to make up for all the trouble, with dedicated contact information.",
+            "friendly-high-low": "I'll ship it overnight - you'll have it tomorrow! And you know what? I'm also adding 6 months of premium support at no cost to really make up for all this trouble!",
+            "friendly-high-high": "I'll ship it overnight - you'll have it tomorrow with full tracking! And you know what? I'm also adding 6 months of premium support at no cost to really make up for all this trouble you've been through! Here's my direct line!",
+            "professional-low-low": "Overnight shipping: delivery tomorrow. Adding 6-month premium support as compensation.",
+            "professional-low-high": "Overnight shipping arranged: delivery tomorrow with tracking. Adding complimentary 6-month premium support as compensation, including dedicated contact information and priority service.",
+            "professional-high-low": "I'll arrange overnight shipping - you'll receive it tomorrow. Additionally, I'm adding 6 months of complimentary premium support to compensate for the inconvenience you've experienced.",
+            "professional-high-high": "I'll arrange overnight shipping - you'll receive it tomorrow with complete tracking. Additionally, I'm adding 6 months of complimentary premium support to compensate for the inconvenience you've experienced, including dedicated contact information and priority service access."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 2,
+            "empathy": 2
+          },
+          "nextNodeId": "end_success_very_high"
+        }
+      ]
+    },
+    {
+      "id": "level_3_a2_2",
+      "level": 3,
+      "options": [
+        {
+          "id": "opt_3_a2_2_a",
+          "text": {
+            "friendly-low-low": "Repair would take 7-10 days. A replacement makes more sense. I'll arrange that.",
+            "friendly-low-high": "Repair would take 7-10 days with detailed documentation. Given your situation, a replacement makes more sense. I'll arrange that instead with expedited shipping.",
+            "friendly-high-low": "Repair would take 7-10 days, which is way too long! Given everything you've been through, a replacement makes way more sense. Let me arrange that instead!",
+            "friendly-high-high": "Repair would take 7-10 days, which is way too long! Given everything you've been through, a replacement makes way more sense. Let me arrange that instead with full tracking and support!",
+            "professional-low-low": "Repair timeline: 7-10 days. Replacement is more appropriate. I will arrange that.",
+            "professional-low-high": "Repair timeline: 7-10 days with detailed service documentation. Given your circumstances, replacement is more appropriate. I will arrange that with complete tracking.",
+            "professional-high-low": "A repair would take 7-10 days. Given your situation and the recurring nature of the issue, a replacement is more appropriate. I'll arrange that for you.",
+            "professional-high-high": "A repair would take 7-10 days with comprehensive documentation. Given your situation and the recurring nature of the issue, a replacement is more appropriate. I'll arrange that for you with complete tracking and support."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 2,
+            "empathy": 2
+          },
+          "nextNodeId": "end_success_high"
+        },
+        {
+          "id": "opt_3_a2_2_b",
+          "text": {
+            "friendly-low-low": "Repair takes about a week. But I can send you a loaner device while yours is being repaired.",
+            "friendly-low-high": "Repair takes approximately one week with detailed tracking. However, I can provide you with a loaner device to use during that time, with complete setup instructions.",
+            "friendly-high-low": "Repair takes about a week, but here's an idea - I can send you a loaner device to use while yours is being repaired!",
+            "friendly-high-high": "Repair takes about a week, but here's an idea - I can send you a loaner device to use while yours is being repaired, with complete setup instructions and support!",
+            "professional-low-low": "Repair duration: approximately one week. Loaner device can be provided.",
+            "professional-low-high": "Repair duration: approximately one week with detailed service tracking. Loaner device can be provided during repair period with complete setup documentation.",
+            "professional-high-low": "The repair process takes approximately one week. However, I can provide you with a loaner device to use during that time.",
+            "professional-high-high": "The repair process takes approximately one week with complete tracking. However, I can provide you with a loaner device to use during that time with detailed setup instructions and support."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 1,
+            "empathy": 1
+          },
+          "nextNodeId": "end_success_medium"
+        }
+      ]
+    },
+    {
+      "id": "level_3_b1_1",
+      "level": 3,
+      "options": [
+        {
+          "id": "opt_3_b1_1_a",
+          "text": {
+            "friendly-low-low": "This will be from our revised batch with the hardware fix. Different from your current model.",
+            "friendly-low-high": "This will be from our revised production batch with the hardware fix implemented and documented. It's different from your current model specifications.",
+            "friendly-high-low": "This is from our revised production batch with the actual hardware fix built in! It's different from your current model - this issue has been resolved!",
+            "friendly-high-high": "This is from our revised production batch with the actual hardware fix built in and documented! It's different from your current model - this issue has been completely resolved in the new batch!",
+            "professional-low-low": "Unit from revised batch with hardware fix. Different from current model.",
+            "professional-low-high": "Unit from revised production batch with documented hardware fix implemented. Different from current model specifications with complete technical documentation.",
+            "professional-high-low": "This will be from our revised production batch with the hardware fix implemented. It's different from your current model - the defect has been addressed.",
+            "professional-high-high": "This will be from our revised production batch with the documented hardware fix implemented. It's different from your current model - the defect has been comprehensively addressed with complete technical documentation."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 1,
+            "empathy": 1
+          },
+          "nextNodeId": "end_success_high"
+        },
+        {
+          "id": "opt_3_b1_1_b",
+          "text": {
+            "friendly-low-low": "It's from our newest batch with the fix. I'm also including a 1-year extended warranty and direct support line.",
+            "friendly-low-high": "It's from our newest production batch with the hardware fix implemented and documented. I'm also including a 1-year extended warranty and a dedicated support line just for you with my direct contact information in case any issues arise.",
+            "friendly-high-low": "It's from our newest batch with the fix built in! Plus, I'm hooking you up with a 1-year extended warranty AND a direct support line just for you!",
+            "friendly-high-high": "It's from our newest batch with the fix built in and fully documented! Plus, I'm hooking you up with a 1-year extended warranty AND a direct support line just for you - you'll have priority access with my direct contact if anything comes up!",
+            "professional-low-low": "Newest batch with fix. Including 1-year warranty and dedicated support line.",
+            "professional-low-high": "Newest production batch with documented hardware fix. Including 1-year extended warranty and dedicated support line for priority access with complete contact documentation.",
+            "professional-high-low": "This will be from our newest production batch with the hardware fix implemented. I'm also including a 1-year extended warranty and providing you with a direct support line for priority access should any issues arise.",
+            "professional-high-high": "This will be from our newest production batch with the documented hardware fix implemented. I'm also including a 1-year extended warranty and providing you with a dedicated support line with my direct contact information for priority access should any issues arise."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 2,
+            "empathy": 2
+          },
+          "nextNodeId": "end_success_very_high"
+        }
+      ]
+    },
+    {
+      "id": "level_3_b1_2",
+      "level": 3,
+      "options": [
+        {
+          "id": "opt_3_b1_2_a",
+          "text": {
+            "friendly-low-low": "You're right. Let me upgrade to overnight shipping at no charge. You'll have it tomorrow.",
+            "friendly-low-high": "You're right, and I apologize for the inconvenience. I'm upgrading you to complimentary overnight shipping with full tracking. You'll receive it tomorrow.",
+            "friendly-high-low": "You're absolutely right! Let me upgrade you to overnight shipping at no charge - you'll have it tomorrow!",
+            "friendly-high-high": "You're absolutely right! Let me upgrade you to overnight shipping at no charge with complete tracking - you'll have it tomorrow!",
+            "professional-low-low": "Acknowledged. Upgrading to complimentary overnight shipping. Delivery: tomorrow.",
+            "professional-low-high": "Acknowledged. Upgrading to complimentary overnight shipping with complete tracking and delivery confirmation. Delivery: tomorrow.",
+            "professional-high-low": "You're right, and I apologize for the inconvenience. I'm upgrading you to complimentary overnight shipping - you'll receive it tomorrow.",
+            "professional-high-high": "You're right, and I apologize for the extended inconvenience. I'm upgrading you to complimentary overnight shipping with full tracking - you'll receive it tomorrow."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 2,
+            "empathy": 2
+          },
+          "nextNodeId": "end_success_very_high"
+        },
+        {
+          "id": "opt_3_b1_2_b",
+          "text": {
+            "friendly-low-low": "Unfortunately 3-5 days is our fastest option. I can offer you a $25 account credit.",
+            "friendly-low-high": "Unfortunately 3-5 days is our fastest standard option. However, I can offer you a $25 account credit as compensation for the inconvenience.",
+            "friendly-high-low": "Unfortunately 3-5 days is our fastest standard option, but I can definitely offer you a $25 account credit for all the inconvenience!",
+            "friendly-high-high": "Unfortunately 3-5 days is our fastest standard option, but I can definitely offer you a $25 account credit for all the inconvenience you've experienced!",
+            "professional-low-low": "Standard timeframe is 3-5 days. I can offer $25 account credit.",
+            "professional-low-high": "Standard expedited timeframe is 3-5 days per shipping guidelines. However, I can offer $25 account credit as compensation for the extended inconvenience.",
+            "professional-high-low": "Unfortunately, 3-5 days is our standard expedited timeframe. However, I can offer you a $25 account credit to compensate for the extended inconvenience.",
+            "professional-high-high": "Unfortunately, 3-5 days is our standard expedited timeframe per shipping policy. However, I can offer you a $25 account credit to compensate for the extended inconvenience you've experienced."
+          },
+          "scores": {
+            "clarity": 1,
+            "friendly": 1,
+            "empathy": 1
+          },
+          "nextNodeId": "end_success_medium"
+        }
+      ]
+    },
+    {
+      "id": "level_3_b2_1",
+      "level": 3,
+      "options": [
+        {
+          "id": "opt_3_b2_1_a",
+          "text": {
+            "friendly-low-low": "I can have it shipped overnight - you'll receive it tomorrow.",
+            "friendly-low-high": "I'll arrange overnight shipping with full tracking - you'll receive it tomorrow.",
+            "friendly-high-low": "I'll ship it overnight - you'll have it in your hands tomorrow!",
+            "friendly-high-high": "I'll ship it overnight with complete tracking - you'll have it in your hands tomorrow!",
+            "professional-low-low": "Overnight shipping arranged. Delivery: tomorrow.",
+            "professional-low-high": "Overnight shipping arranged with complete tracking and delivery confirmation. Delivery: tomorrow.",
+            "professional-high-low": "I'll arrange overnight shipping - you'll receive it tomorrow.",
+            "professional-high-high": "I'll arrange overnight shipping with full tracking - you'll receive it tomorrow."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 1,
+            "empathy": 1
+          },
+          "nextNodeId": "end_success_high"
+        },
+        {
+          "id": "opt_3_b2_1_b",
+          "text": {
+            "friendly-low-low": "Overnight delivery - tomorrow. I'm also giving you priority support and $50 account credit.",
+            "friendly-low-high": "Overnight delivery with tracking - arrives tomorrow. I'm also granting you priority support status with dedicated contact and applying a $50 account credit as compensation for all the trouble this has caused.",
+            "friendly-high-low": "Overnight delivery - it'll be there tomorrow! And listen, I'm also giving you priority support status and a $50 account credit!",
+            "friendly-high-high": "Overnight delivery with full tracking - it'll be there tomorrow! And listen, I'm also giving you priority support status with my direct line and a $50 account credit because you've been way too patient with all this trouble!",
+            "professional-low-low": "Overnight delivery: tomorrow. Priority support granted. $50 credit applied.",
+            "professional-low-high": "Overnight delivery with tracking: tomorrow. Priority support status granted with dedicated contact. $50 account credit applied as compensation with complete documentation.",
+            "professional-high-low": "I'll arrange overnight delivery - it arrives tomorrow. I'm also granting you priority support status and applying a $50 account credit to compensate for the extended trouble you've experienced.",
+            "professional-high-high": "I'll arrange overnight delivery with complete tracking - it arrives tomorrow. I'm also granting you priority support status with dedicated contact information and applying a $50 account credit to compensate for the extended trouble you've experienced."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 2,
+            "empathy": 2
+          },
+          "nextNodeId": "end_success_very_high"
+        }
+      ]
+    },
+    {
+      "id": "level_3_b2_2",
+      "level": 3,
+      "options": [
+        {
+          "id": "opt_3_b2_2_a",
+          "text": {
+            "friendly-low-low": "You're right. Let me skip diagnostics and arrange a replacement. I can ship it overnight.",
+            "friendly-low-high": "You're right, and you've invested enough time. Let me skip the diagnostic process and arrange a replacement device for you. I'll ship it overnight with full tracking.",
+            "friendly-high-low": "You know what? You're absolutely right. Let me skip all that diagnostic stuff and just get you a replacement device! I'll ship it overnight!",
+            "friendly-high-high": "You know what? You're absolutely right. Let me skip all that diagnostic stuff and just get you a replacement device! I'll ship it overnight with complete tracking so you have it tomorrow!",
+            "professional-low-low": "Valid point. Bypassing diagnostics. Arranging replacement with overnight shipping.",
+            "professional-low-high": "Valid point. Given the time you've invested, I'm bypassing the diagnostic process. Arranging replacement device with overnight shipping and complete tracking.",
+            "professional-high-low": "You raise a valid point. Given the time you've already invested, I'll bypass the diagnostic process and arrange a replacement device with overnight shipping.",
+            "professional-high-high": "You raise a valid point. Given the time you've already invested, I'll bypass the diagnostic process and arrange a replacement device with overnight shipping and complete tracking documentation."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 2,
+            "empathy": 2
+          },
+          "nextNodeId": "end_success_very_high"
+        },
+        {
+          "id": "opt_3_b2_2_b",
+          "text": {
+            "friendly-low-low": "After analysis, if defect confirmed, we'd send a replacement. Standard process.",
+            "friendly-low-high": "After the analysis, if they confirm a defect, we would proceed with sending a replacement device. This is our standard diagnostic procedure.",
+            "friendly-high-low": "So after the analysis, if they confirm it's a defect, we'd send you a replacement! That's just our standard process!",
+            "friendly-high-high": "So after the analysis, if they confirm it's a defect, we'd send you a replacement with tracking! That's just our standard process!",
+            "professional-low-low": "Post-analysis, confirmed defects result in replacement. Standard procedure.",
+            "professional-low-high": "Following the analysis, confirmed defects result in replacement shipment with documentation. This is standard procedure per our quality protocols.",
+            "professional-high-low": "Following the analysis, if a defect is confirmed, we would proceed with sending a replacement device. This is our standard process.",
+            "professional-high-high": "Following the comprehensive analysis, if a defect is confirmed through our diagnostic protocols, we would proceed with sending a replacement device. This is our standard process."
+          },
+          "scores": {
+            "clarity": 1,
+            "friendly": 0,
+            "empathy": -1
+          },
+          "nextNodeId": "end_success_low"
+        }
+      ]
+    },
+    {
+      "id": "end_success_very_high",
+      "type": "ai_response",
+      "content": "Thank you. I really appreciate you taking this seriously and providing a real solution. This is the level of service I was hoping for from the beginning. I'll give you another chance with this replacement.",
+      "nextNodeId": "complete"
+    },
+    {
+      "id": "end_success_high",
+      "type": "ai_response",
+      "content": "Okay, that sounds reasonable. I appreciate you working with me on this. Let's hope this replacement actually solves the problem.",
+      "nextNodeId": "complete"
+    },
+    {
+      "id": "end_success_medium",
+      "type": "ai_response",
+      "content": "Alright, I guess that will have to work. Thanks for your help, though I'm still not entirely satisfied with how long this has taken.",
+      "nextNodeId": "complete"
+    },
+    {
+      "id": "end_success_low",
+      "type": "ai_response",
+      "content": "This is exactly the runaround I was afraid of. I think I'll be looking at competitor options while I wait. Thanks anyway.",
+      "nextNodeId": "complete"
+    }
+  ]
+}

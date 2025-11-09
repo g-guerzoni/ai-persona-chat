@@ -1,0 +1,790 @@
+{
+  "metadata": {
+    "personaName": "Claudia",
+    "personaRole": "Frustrated Customer",
+    "callId": "123456",
+    "service": "Billing",
+    "subject": "Refund Request",
+    "notes": "Customer is upset about unexpected charge. Has been a loyal customer for 2 years.",
+    "oceanTraits": {
+      "openness": 45,
+      "conscientiousness": 60,
+      "extraversion": 55,
+      "agreeableness": 30,
+      "neuroticism": 70
+    },
+    "primaryTrait": "agreeableness",
+    "secondaryTrait": "neuroticism"
+  },
+  "initialMessages": {
+    "systemMessage": "You are speaking with Claudia, a frustrated customer requesting a refund for billing #123456. She noticed an unexpected charge on her account and is upset. Your goal is to handle the situation with empathy, clarity, and professionalism.",
+    "initialMessage": {
+      "role": "ai",
+      "content": "Hi, I'm Claudia and I need to talk to someone about billing #123456. I just got charged $149.99 and I never authorized this! I've been a customer for 2 years and this is really disappointing."
+    }
+  },
+  "conversationTree": [
+    {
+      "id": "start",
+      "level": 0,
+      "options": [
+        {
+          "id": "opt_0_a",
+          "text": {
+            "friendly-low-low": "I see the issue. Let me check this charge now.",
+            "friendly-low-high": "I understand your concern about this. Let me look into this charge for you right away.",
+            "friendly-high-low": "I'll be happy to help you with this. Let me pull up your account and review this charge.",
+            "friendly-high-high": "Oh no! I'm so sorry you're dealing with this! Let me jump into your account right now and figure out what happened with that charge!",
+            "professional-low-low": "I will investigate this charge. Please wait while I review your account.",
+            "professional-low-high": "I understand this is concerning. I will investigate this charge immediately.",
+            "professional-high-low": "I'll be glad to assist you with this matter. Let me review your account details right away.",
+            "professional-high-high": "I absolutely understand your concern, and I appreciate you bringing this to my attention! Let me pull up your account details right away and get to the bottom of this."
+          },
+          "scores": {
+            "clarity": 1,
+            "friendly": 1,
+            "empathy": 2
+          },
+          "nextNodeId": "response_0_a"
+        },
+        {
+          "id": "opt_0_b",
+          "text": {
+            "friendly-low-low": "Tell me what you expected to be charged.",
+            "friendly-low-high": "Can you tell me more about what you were expecting to be charged?",
+            "friendly-high-low": "I'd like to help! Could you share what you were expecting to see on your bill?",
+            "friendly-high-high": "I hear you! That must be really frustrating! Can you walk me through what you were expecting to see on your bill?",
+            "professional-low-low": "Provide details about the expected charges on your account.",
+            "professional-low-high": "Could you provide details about the expected charges on your account?",
+            "professional-high-low": "I'd like to assist. Could you please share what charges you were anticipating?",
+            "professional-high-high": "I certainly want to help resolve this! Could you please share what charges you were anticipating so I can compare with what appeared?"
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 0,
+            "empathy": 0
+          },
+          "nextNodeId": "response_0_b"
+        }
+      ]
+    },
+    {
+      "id": "response_0_a",
+      "type": "ai_response",
+      "content": "Thank you for looking into it. I just checked my email and I don't see any notification about this charge. I should have been notified, right?",
+      "nextNodeId": "level_1_a"
+    },
+    {
+      "id": "response_0_b",
+      "type": "ai_response",
+      "content": "Well, I wasn't expecting ANY charges! My subscription should be only $49.99 per month. This $149.99 came out of nowhere. Where did it even come from?",
+      "nextNodeId": "level_1_b"
+    },
+    {
+      "id": "level_1_a",
+      "level": 1,
+      "options": [
+        {
+          "id": "opt_1_a1",
+          "text": {
+            "friendly-low-low": "You're right. Let me check the notification system.",
+            "friendly-low-high": "You're absolutely right - you should have received a notification. Let me check if there was a system issue.",
+            "friendly-high-low": "You're completely right! Let me look into our notification system and see what happened there.",
+            "friendly-high-high": "You know what, you're totally right! You definitely should have gotten an email about this. Let me dig into our notification system and see what happened there!",
+            "professional-low-low": "Correct. I will verify the notification status.",
+            "professional-low-high": "You are correct. Let me verify the notification status for this transaction.",
+            "professional-high-low": "You're absolutely right to expect that notification. Let me investigate our email system.",
+            "professional-high-high": "You're absolutely right to expect that notification! Let me investigate our email system to determine why you didn't receive advance notice of this charge."
+          },
+          "scores": {
+            "clarity": 1,
+            "friendly": 1,
+            "empathy": 1
+          },
+          "nextNodeId": "response_1_a1"
+        },
+        {
+          "id": "opt_1_a2",
+          "text": {
+            "friendly-low-low": "I see the charge. It's for an annual upgrade. Did you click any upgrade offers?",
+            "friendly-low-high": "I see the charge here. It looks like this is for an annual upgrade. Did you click on any upgrade offers recently?",
+            "friendly-high-low": "Okay, I found it! It looks like this charge is for an annual premium upgrade. Do you remember clicking on any upgrade options?",
+            "friendly-high-high": "Okay, I found it! So it looks like this charge is for an annual premium upgrade. Do you remember maybe clicking on any upgrade prompts or special offers recently?",
+            "professional-low-low": "The charge is for an annual premium upgrade. Confirm if you initiated this.",
+            "professional-low-high": "The charge corresponds to an annual premium upgrade. Can you confirm if you initiated an upgrade request?",
+            "professional-high-low": "I've located the charge - it appears to be for an annual premium upgrade. May I ask if you recall any upgrade interactions?",
+            "professional-high-high": "I've located the charge in your account - it appears to be for an annual premium upgrade. May I ask if you recall interacting with any upgrade options or promotional offers?"
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 0,
+            "empathy": -1
+          },
+          "nextNodeId": "response_1_a2"
+        }
+      ]
+    },
+    {
+      "id": "level_1_b",
+      "level": 1,
+      "options": [
+        {
+          "id": "opt_1_b1",
+          "text": {
+            "friendly-low-low": "Let me check your billing history to identify this charge.",
+            "friendly-low-high": "I can see why that's confusing. Let me pull up your billing history and see what this charge is for.",
+            "friendly-high-low": "I'd be happy to help clarify this! Let me dive into your billing history and figure out what this charge represents.",
+            "friendly-high-high": "Oh wow, I can totally see why that would be alarming! Let me dive into your billing history right now and figure out exactly what this mystery charge is for!",
+            "professional-low-low": "I will review your billing history to identify the charge source.",
+            "professional-low-high": "I will review your billing history to identify the source of this charge.",
+            "professional-high-low": "I'll be glad to clarify this for you. Let me access your billing history to identify what this charge represents.",
+            "professional-high-high": "I completely understand your confusion! Let me access your billing history immediately to identify exactly what this $149.99 charge represents."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 1,
+            "empathy": 1
+          },
+          "nextNodeId": "response_1_b1"
+        },
+        {
+          "id": "opt_1_b2",
+          "text": {
+            "friendly-low-low": "These charges happen with upgrades or add-ons. Let me check your settings.",
+            "friendly-low-high": "Sometimes these charges happen when there's an upgrade or add-on selected. Let me check your account settings.",
+            "friendly-high-low": "These surprise charges often happen with upgrades or add-ons. Let me take a look at your account settings!",
+            "friendly-high-high": "You know, these surprise charges usually happen when someone accidentally clicks an upgrade button or add-on! Let me peek at your account settings and see what's going on!",
+            "professional-low-low": "Unexpected charges typically result from upgrade selections. I will examine your account.",
+            "professional-low-high": "Unexpected charges typically result from upgrade selections or add-on services. I will examine your account configuration.",
+            "professional-high-low": "These situations often occur due to upgrade selections or additional services. Allow me to review your account configuration.",
+            "professional-high-high": "These situations often occur due to inadvertent upgrade selections or additional service activations. Allow me to thoroughly review your account configuration to determine the cause."
+          },
+          "scores": {
+            "clarity": 1,
+            "friendly": -1,
+            "empathy": 0
+          },
+          "nextNodeId": "response_1_b2"
+        }
+      ]
+    },
+    {
+      "id": "response_1_a1",
+      "type": "ai_response",
+      "content": "Well, I appreciate you checking that. So what happens now? Can I get this money back? I really didn't want this charge.",
+      "nextNodeId": "level_2_a1"
+    },
+    {
+      "id": "response_1_a2",
+      "type": "ai_response",
+      "content": "What? No! I would never upgrade without knowing the cost first. Are you saying this is MY fault? I want my money back!",
+      "nextNodeId": "level_2_a2"
+    },
+    {
+      "id": "response_1_b1",
+      "type": "ai_response",
+      "content": "Okay, good. I really need to understand what happened here because I can't afford unexpected charges like this.",
+      "nextNodeId": "level_2_b1"
+    },
+    {
+      "id": "response_1_b2",
+      "type": "ai_response",
+      "content": "Accidentally clicked? I didn't accidentally click anything! I know how to use a computer. Can you just refund me or not?",
+      "nextNodeId": "level_2_b2"
+    },
+    {
+      "id": "level_2_a1",
+      "level": 2,
+      "options": [
+        {
+          "id": "opt_2_a1_1",
+          "text": {
+            "friendly-low-low": "I can process a full refund now since you didn't get notification.",
+            "friendly-low-high": "I can process a full refund for you right now since you didn't receive proper notification. Give me just one moment.",
+            "friendly-high-low": "I'd be happy to process a full refund for you right away! You should see it back in 3-5 business days.",
+            "friendly-high-high": "Absolutely! Since you didn't get that notification, I'm going to process a full refund for you right this second! You should see it back in your account within 3-5 business days!",
+            "professional-low-low": "I will process a full refund. Expect it within 3-5 business days.",
+            "professional-low-high": "I will process a full refund immediately due to the notification failure. The refund will appear within 3-5 business days.",
+            "professional-high-low": "I'll be glad to process a complete refund for you right away. You can expect the funds within 3-5 business days.",
+            "professional-high-high": "Given the notification issue, I'm authorized to process a complete refund for you right away. You can expect the funds to return to your account within 3-5 business days!"
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 2,
+            "empathy": 2
+          },
+          "nextNodeId": "response_2_a1_1"
+        },
+        {
+          "id": "opt_2_a1_2",
+          "text": {
+            "friendly-low-low": "I need supervisor approval for refunds. Takes 24-48 hours.",
+            "friendly-low-high": "I need to submit a refund request to my supervisor. It usually takes 24-48 hours for approval.",
+            "friendly-high-low": "I'll need to send this to my supervisor for refund approval - they're usually quick, about 24-48 hours!",
+            "friendly-high-high": "So what I'll need to do is send this up to my supervisor for a refund approval - they're usually super quick, like 24-48 hours! Then we can get you sorted!",
+            "professional-low-low": "Refund requires supervisor approval. Processing time is 24-48 hours.",
+            "professional-low-high": "I must submit this refund request for supervisor approval. Processing time is 24-48 hours.",
+            "professional-high-low": "I'll need to escalate this refund request to my supervisor for approval. The typical review period is 24-48 hours.",
+            "professional-high-high": "I'll need to escalate this refund request to my supervisor for approval. The typical review period is 24-48 hours, after which we'll process your refund."
+          },
+          "scores": {
+            "clarity": 1,
+            "friendly": 0,
+            "empathy": 1
+          },
+          "nextNodeId": "response_2_a1_2"
+        }
+      ]
+    },
+    {
+      "id": "level_2_a2",
+      "level": 2,
+      "options": [
+        {
+          "id": "opt_2_a2_1",
+          "text": {
+            "friendly-low-low": "I didn't mean that. This isn't your fault. Let me process a refund.",
+            "friendly-low-high": "I apologize - I didn't mean to imply that at all. This is definitely not your fault. Let me process a refund for you right now.",
+            "friendly-high-low": "Oh no, I'm sorry - I didn't mean it like that! This is not your fault at all. Let me process that refund for you immediately!",
+            "friendly-high-high": "Oh gosh, no no no! I'm so sorry - I didn't mean it like that at all! This is absolutely not your fault! Let me fix this right now and get that refund processed for you immediately!",
+            "professional-low-low": "I apologize. This is not your fault. I will process your refund.",
+            "professional-low-high": "I apologize for any misunderstanding. This is not your fault. I will process your refund immediately.",
+            "professional-high-low": "Please accept my apologies - I did not intend to suggest fault. Let me process your full refund immediately.",
+            "professional-high-high": "Please accept my sincere apologies - I absolutely did not intend to suggest this was your fault. Let me make this right by processing your full refund immediately."
+          },
+          "scores": {
+            "clarity": 1,
+            "friendly": 2,
+            "empathy": 2
+          },
+          "nextNodeId": "response_2_a2_1"
+        },
+        {
+          "id": "opt_2_a2_2",
+          "text": {
+            "friendly-low-low": "Let me check our refund policy for this charge.",
+            "friendly-low-high": "I understand you're upset. Let me check our refund policy for this type of charge.",
+            "friendly-high-low": "I understand your frustration! Let me look up our refund policy so I can tell you exactly what we can do!",
+            "friendly-high-high": "I totally get that you're frustrated! Let me look up our refund policy real quick so I can tell you exactly what we can do here!",
+            "professional-low-low": "I will review our refund policy for this situation.",
+            "professional-low-high": "I will review our refund policy to determine the appropriate resolution.",
+            "professional-high-low": "I understand your frustration. Allow me to consult our refund policy to determine the best course of action.",
+            "professional-high-high": "I understand your frustration. Allow me to consult our refund policy to determine the best course of action for your situation."
+          },
+          "scores": {
+            "clarity": 0,
+            "friendly": 0,
+            "empathy": 1
+          },
+          "nextNodeId": "response_2_a2_2"
+        }
+      ]
+    },
+    {
+      "id": "level_2_b1",
+      "level": 2,
+      "options": [
+        {
+          "id": "opt_2_b1_1",
+          "text": {
+            "friendly-low-low": "This charge is for a premium feature bundle from last week. I can refund it.",
+            "friendly-low-high": "I found it - this charge is for a premium feature bundle that was activated last week. I can refund this for you and deactivate the premium features.",
+            "friendly-high-low": "Found it! This is for a premium feature bundle from last week. I can refund this and turn off those premium features for you!",
+            "friendly-high-high": "Okay, mystery solved! So this $149.99 is for a premium feature bundle that got activated last week. I can totally refund this for you and turn off those premium features right away!",
+            "professional-low-low": "The charge is for a premium feature bundle activated last week. I will refund and deactivate.",
+            "professional-low-high": "The charge is for a premium feature bundle activated on your account last week. I will process the refund and deactivate the premium features.",
+            "professional-high-low": "I've identified the charge - it's for a premium feature bundle activated last week. I'll be happy to process a full refund and deactivate those features.",
+            "professional-high-high": "I've identified the charge - it's for a premium feature bundle that was activated on your account last week. I'll be happy to process a full refund and deactivate those premium features for you."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 1,
+            "empathy": 1
+          },
+          "nextNodeId": "response_2_b1_1"
+        },
+        {
+          "id": "opt_2_b1_2",
+          "text": {
+            "friendly-low-low": "This is an annual subscription charge. I can switch you back to monthly.",
+            "friendly-low-high": "I see the issue. This is an annual subscription charge. I can help you switch back to monthly billing.",
+            "friendly-high-low": "Found it! Your subscription got switched to annual billing. I can definitely help you switch back to monthly!",
+            "friendly-high-high": "Aha! Found it! So it looks like your subscription got switched to annual billing. I can definitely help you switch back to monthly and sort out this charge!",
+            "professional-low-low": "Your subscription was converted to annual billing. I can revert to monthly.",
+            "professional-low-high": "Your subscription was converted to annual billing. I can revert this to monthly billing and address the charge.",
+            "professional-high-low": "I've located the issue - your subscription was switched to annual billing. I can certainly revert you to monthly and resolve this charge.",
+            "professional-high-high": "I've located the issue - your subscription was switched to annual billing. I can certainly revert you to monthly billing and resolve this charge accordingly."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 0,
+            "empathy": 0
+          },
+          "nextNodeId": "response_2_b1_2"
+        }
+      ]
+    },
+    {
+      "id": "level_2_b2",
+      "level": 2,
+      "options": [
+        {
+          "id": "opt_2_b2_1",
+          "text": {
+            "friendly-low-low": "My mistake. Let me look into the refund process.",
+            "friendly-low-high": "I apologize for my poor choice of words. Let me look into the refund process for you right now.",
+            "friendly-high-low": "I'm sorry! That came out wrong. Let me look into getting you that refund right away!",
+            "friendly-high-high": "Oh my gosh, I'm so sorry! That came out totally wrong! Let me make this right and look into getting you that refund immediately!",
+            "professional-low-low": "I apologize. I will investigate the refund process.",
+            "professional-low-high": "I apologize for my phrasing. I will investigate the refund process immediately.",
+            "professional-high-low": "Please accept my apologies for the poor phrasing. Let me focus on resolving this by investigating your refund options.",
+            "professional-high-high": "Please accept my apologies for the poor phrasing. Let me focus on resolving this issue by investigating your refund options right away."
+          },
+          "scores": {
+            "clarity": 1,
+            "friendly": 1,
+            "empathy": 2
+          },
+          "nextNodeId": "response_2_b2_1"
+        },
+        {
+          "id": "opt_2_b2_2",
+          "text": {
+            "friendly-low-low": "Yes, I can help with a refund. Let me check the options.",
+            "friendly-low-high": "Yes, I can help with a refund. Let me check what options are available for your account.",
+            "friendly-high-low": "Yes, I can definitely help with a refund! Let me check out all the options available for your account!",
+            "friendly-high-high": "Yes, absolutely! Let me check out all the refund options available for your specific account situation!",
+            "professional-low-low": "I can assist with the refund. I will review available options.",
+            "professional-low-high": "I can assist with the refund. I will review the available options for your account.",
+            "professional-high-low": "Certainly, I can assist with processing a refund. Let me review all available options for your account.",
+            "professional-high-high": "Certainly, I can assist with processing a refund. Let me review all available options specific to your account circumstances."
+          },
+          "scores": {
+            "clarity": 1,
+            "friendly": 0,
+            "empathy": 0
+          },
+          "nextNodeId": "response_2_b2_2"
+        }
+      ]
+    },
+    {
+      "id": "response_2_a1_1",
+      "type": "ai_response",
+      "content": "Oh, thank you so much! That's such a relief. I really appreciate you taking care of this so quickly.",
+      "nextNodeId": "level_3_a1_1"
+    },
+    {
+      "id": "response_2_a1_2",
+      "type": "ai_response",
+      "content": "Wait, 24-48 hours? That seems like a long time. Is there any way to speed this up?",
+      "nextNodeId": "level_3_a1_2"
+    },
+    {
+      "id": "response_2_a2_1",
+      "type": "ai_response",
+      "content": "Okay, I appreciate the apology. Thank you for fixing this. How long will the refund take?",
+      "nextNodeId": "level_3_a2_1"
+    },
+    {
+      "id": "response_2_a2_2",
+      "type": "ai_response",
+      "content": "Fine. But I need to know today whether I'm getting my money back or not. This is important to me.",
+      "nextNodeId": "level_3_a2_2"
+    },
+    {
+      "id": "response_2_b1_1",
+      "type": "ai_response",
+      "content": "Perfect! Yes, please refund it and turn off those features. I definitely don't need premium anything. How long for the refund?",
+      "nextNodeId": "level_3_b1_1"
+    },
+    {
+      "id": "response_2_b1_2",
+      "type": "ai_response",
+      "content": "I definitely did NOT want annual billing. How did that even happen? And what about my money?",
+      "nextNodeId": "level_3_b1_2"
+    },
+    {
+      "id": "response_2_b2_1",
+      "type": "ai_response",
+      "content": "Thank you. I just want to make sure this gets resolved. Can you refund me?",
+      "nextNodeId": "level_3_b2_1"
+    },
+    {
+      "id": "response_2_b2_2",
+      "type": "ai_response",
+      "content": "Okay, but can you just tell me yes or no - am I getting my $149.99 back?",
+      "nextNodeId": "level_3_b2_2"
+    },
+    {
+      "id": "level_3_a1_1",
+      "level": 3,
+      "options": [
+        {
+          "id": "opt_3_a1_1_a",
+          "text": {
+            "friendly-low-low": "You're welcome. Anything else I can help with?",
+            "friendly-low-high": "You're very welcome. Is there anything else I can help you with today?",
+            "friendly-high-low": "Of course! Happy to help! Is there anything else I can do for you today?",
+            "friendly-high-high": "Of course! I'm just happy I could help! Is there anything else at all I can do for you today?",
+            "professional-low-low": "You are welcome. Do you require additional assistance?",
+            "professional-low-high": "You are welcome. Do you require any additional assistance?",
+            "professional-high-low": "It's my pleasure to help! Is there anything else I can assist you with today?",
+            "professional-high-high": "It's my pleasure to help! Is there anything else I can assist you with today?"
+          },
+          "scores": {
+            "clarity": 1,
+            "friendly": 1,
+            "empathy": 1
+          },
+          "nextNodeId": "end_success_high"
+        },
+        {
+          "id": "opt_3_a1_1_b",
+          "text": {
+            "friendly-low-low": "Glad to help. I'll make sure our team looks into the notification issue.",
+            "friendly-low-high": "Glad I could help. I'll also make sure our team looks into why you didn't get that notification email.",
+            "friendly-high-low": "So happy to help! I'm also going to flag this with our tech team to fix that notification issue!",
+            "friendly-high-high": "So happy to help! And you know what, I'm also going to flag this with our tech team to make sure that notification email issue gets fixed so this doesn't happen to anyone else!",
+            "professional-low-low": "I will escalate the notification issue to our technical team.",
+            "professional-low-high": "I will also escalate the notification issue to our technical team for investigation.",
+            "professional-high-low": "I'm glad to resolve this for you. Additionally, I'll be escalating the notification issue to our technical team.",
+            "professional-high-high": "I'm glad to resolve this for you. Additionally, I'll be escalating the notification issue to our technical team to ensure this doesn't occur in the future."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 1,
+            "empathy": 2
+          },
+          "nextNodeId": "end_success_very_high"
+        }
+      ]
+    },
+    {
+      "id": "level_3_a1_2",
+      "level": 3,
+      "options": [
+        {
+          "id": "opt_3_a1_2_a",
+          "text": {
+            "friendly-low-low": "That's the standard process. I'll mark it urgent.",
+            "friendly-low-high": "Unfortunately, that's our standard process. I'll mark it as urgent though.",
+            "friendly-high-low": "I wish I could speed it up! That's our standard process, but I'll mark it as urgent for you!",
+            "friendly-high-high": "I totally wish I could! That's just our standard process, but I'll definitely mark it as urgent for you!",
+            "professional-low-low": "That is the standard timeline. I will mark your request as urgent.",
+            "professional-low-high": "That is the standard approval timeline. I will mark your request as urgent priority.",
+            "professional-high-low": "I understand your concern. While that's our standard process, I'll ensure your request is marked as urgent priority.",
+            "professional-high-high": "I understand your concern. While that's our standard approval process, I'll ensure your request is marked as urgent priority."
+          },
+          "scores": {
+            "clarity": 1,
+            "friendly": 1,
+            "empathy": 1
+          },
+          "nextNodeId": "end_success_medium"
+        },
+        {
+          "id": "opt_3_a1_2_b",
+          "text": {
+            "friendly-low-low": "Let me contact my supervisor now to expedite this.",
+            "friendly-low-high": "Let me contact my supervisor right now to see if we can expedite this.",
+            "friendly-high-low": "Let me call my supervisor right now and see if we can fast-track this for you!",
+            "friendly-high-high": "You know what, let me call my supervisor right this minute and see if we can fast-track this for you!",
+            "professional-low-low": "I will contact my supervisor to request expedited processing.",
+            "professional-low-high": "I will contact my supervisor immediately to request expedited processing.",
+            "professional-high-low": "Let me reach out to my supervisor to request expedited processing of your refund.",
+            "professional-high-high": "Let me reach out to my supervisor right away to request expedited processing of your refund."
+          },
+          "scores": {
+            "clarity": 1,
+            "friendly": 2,
+            "empathy": 2
+          },
+          "nextNodeId": "end_success_high"
+        }
+      ]
+    },
+    {
+      "id": "level_3_a2_1",
+      "level": 3,
+      "options": [
+        {
+          "id": "opt_3_a2_1_a",
+          "text": {
+            "friendly-low-low": "It will appear in your account within 3-5 business days.",
+            "friendly-low-high": "The refund will appear in your account within 3-5 business days.",
+            "friendly-high-low": "You should see the money back in your account within 3-5 business days!",
+            "friendly-high-high": "You should see the money back in your account within 3-5 business days!",
+            "professional-low-low": "The refund will be processed within 3-5 business days.",
+            "professional-low-high": "The refund will be processed within 3-5 business days.",
+            "professional-high-low": "You can expect to see the refund reflected in your account within 3-5 business days.",
+            "professional-high-high": "You can expect to see the refund reflected in your account within 3-5 business days."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 1,
+            "empathy": 0
+          },
+          "nextNodeId": "end_success_medium"
+        },
+        {
+          "id": "opt_3_a2_1_b",
+          "text": {
+            "friendly-low-low": "You'll get your money back within 3-5 days. I'll send you a confirmation email.",
+            "friendly-low-high": "You'll get your money back within 3-5 business days. I'll also send you a confirmation email right now.",
+            "friendly-high-low": "You'll see that money back in 3-5 business days! And I'm sending you a confirmation email right now!",
+            "friendly-high-high": "You'll see that money back in 3-5 business days! And I'm sending you a confirmation email right now so you have everything in writing!",
+            "professional-low-low": "The refund will process within 3-5 days. I will send confirmation email.",
+            "professional-low-high": "The refund will process within 3-5 business days. I will send you a confirmation email immediately.",
+            "professional-high-low": "Your refund will be processed within 3-5 business days, and I'm sending you a confirmation email with all the details.",
+            "professional-high-high": "Your refund will be processed within 3-5 business days, and I'm sending you a confirmation email right now with all the details."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 1,
+            "empathy": 1
+          },
+          "nextNodeId": "end_success_high"
+        }
+      ]
+    },
+    {
+      "id": "level_3_a2_2",
+      "level": 3,
+      "options": [
+        {
+          "id": "opt_3_a2_2_a",
+          "text": {
+            "friendly-low-low": "I'll check the policy and get back to you within an hour.",
+            "friendly-low-high": "I understand. I'll check the policy and get back to you within an hour with a definitive answer.",
+            "friendly-high-low": "I totally get it! Let me check this policy and I'll call you back within the hour with a definite answer!",
+            "friendly-high-high": "I totally get it! Let me check this policy super thoroughly and I promise I'll call you back within the hour with a definite answer!",
+            "professional-low-low": "I will review the policy and contact you within one hour.",
+            "professional-low-high": "I will review the policy thoroughly and contact you within one hour with a definitive response.",
+            "professional-high-low": "I completely understand the urgency. I'll conduct a thorough policy review and contact you within one hour with a definitive answer.",
+            "professional-high-high": "I completely understand the urgency. I'll conduct a thorough policy review and contact you within one hour with a definitive answer."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 1,
+            "empathy": 1
+          },
+          "nextNodeId": "end_success_medium"
+        },
+        {
+          "id": "opt_3_a2_2_b",
+          "text": {
+            "friendly-low-low": "Let me talk to my supervisor now. Hold for two minutes.",
+            "friendly-low-high": "Let me talk to my supervisor right now about this. Can you hold for two minutes?",
+            "friendly-high-low": "Let me grab my supervisor right now so we can give you an answer immediately! Hold for just two minutes?",
+            "friendly-high-high": "You know what, let me grab my supervisor right now so we can give you an answer immediately! Can you hold for just two minutes?",
+            "professional-low-low": "I will consult with my supervisor. Please hold for two minutes.",
+            "professional-low-high": "I will consult with my supervisor immediately. Please hold for approximately two minutes.",
+            "professional-high-low": "I want to give you an answer right away. May I place you on a brief hold while I consult with my supervisor?",
+            "professional-high-high": "I want to give you an answer right away. May I place you on a brief hold while I consult with my supervisor? This should take approximately two minutes."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 2,
+            "empathy": 2
+          },
+          "nextNodeId": "end_success_high"
+        }
+      ]
+    },
+    {
+      "id": "level_3_b1_1",
+      "level": 3,
+      "options": [
+        {
+          "id": "opt_3_b1_1_a",
+          "text": {
+            "friendly-low-low": "The refund will take 3-5 business days.",
+            "friendly-low-high": "The refund will take 3-5 business days. I've already processed it on my end.",
+            "friendly-high-low": "It'll take 3-5 business days! I've already hit submit on my end, so it's all in motion!",
+            "friendly-high-high": "It'll take 3-5 business days to hit your account! But good news - I've already hit submit on my end, so it's all in motion!",
+            "professional-low-low": "The refund has been processed and will appear within 3-5 business days.",
+            "professional-low-high": "The refund has been processed and will appear within 3-5 business days.",
+            "professional-high-low": "I've processed the refund on our end, and you can expect it to appear in your account within 3-5 business days.",
+            "professional-high-high": "I've processed the refund on our end, and you can expect it to appear in your account within 3-5 business days."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 1,
+            "empathy": 1
+          },
+          "nextNodeId": "end_success_high"
+        },
+        {
+          "id": "opt_3_b1_1_b",
+          "text": {
+            "friendly-low-low": "3-5 days for the refund. I'm sending you a confirmation and a $10 credit.",
+            "friendly-low-high": "3-5 business days for the refund. I'm also sending you a confirmation email and a $10 credit for the inconvenience.",
+            "friendly-high-low": "The refund will show up in 3-5 business days! And I'm also throwing in a $10 account credit for the hassle!",
+            "friendly-high-high": "The refund will show up in 3-5 business days! And you know what, I'm also throwing in a $10 account credit as an apology for the hassle!",
+            "professional-low-low": "Refund processing time is 3-5 days. I am also applying a $10 credit.",
+            "professional-low-high": "Refund processing time is 3-5 business days. I am also applying a $10 credit for the inconvenience.",
+            "professional-high-low": "Your refund will be processed within 3-5 business days. Additionally, I'm applying a $10 credit to your account for this inconvenience.",
+            "professional-high-high": "Your refund will be processed within 3-5 business days. Additionally, I'm applying a $10 credit to your account as a gesture of goodwill for this inconvenience."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 2,
+            "empathy": 2
+          },
+          "nextNodeId": "end_success_very_high"
+        }
+      ]
+    },
+    {
+      "id": "level_3_b1_2",
+      "level": 3,
+      "options": [
+        {
+          "id": "opt_3_b1_2_a",
+          "text": {
+            "friendly-low-low": "I'm not sure how, but I've fixed it. Full refund within 3-5 days.",
+            "friendly-low-high": "I'm not sure how it switched, but I've fixed it now. You'll get a full refund within 3-5 business days.",
+            "friendly-high-low": "I'm not totally sure how that happened, but I've got it all fixed now! Full refund coming in 3-5 business days!",
+            "friendly-high-high": "You know, I'm not totally sure how that happened, but I've got it all fixed now! Full refund coming your way in 3-5 business days!",
+            "professional-low-low": "I cannot determine the cause, but I have corrected it. Refund within 3-5 days.",
+            "professional-low-high": "I cannot determine the cause, but I have corrected the billing setting. Your refund will process within 3-5 business days.",
+            "professional-high-low": "While I cannot determine the exact cause, I've corrected it and your full refund will be processed within 3-5 business days.",
+            "professional-high-high": "While I cannot determine the exact cause of the billing change, I've corrected it and your full refund will be processed within 3-5 business days."
+          },
+          "scores": {
+            "clarity": 1,
+            "friendly": 1,
+            "empathy": 0
+          },
+          "nextNodeId": "end_success_medium"
+        },
+        {
+          "id": "opt_3_b1_2_b",
+          "text": {
+            "friendly-low-low": "I'll investigate why this happened and send you a detailed explanation.",
+            "friendly-low-high": "I'll investigate why this happened and send you a detailed explanation along with your refund confirmation.",
+            "friendly-high-low": "Great question! Let me dig into how this happened and I'll send you a full explanation along with your refund confirmation!",
+            "friendly-high-high": "Great question! Let me dig into exactly how this happened and I'll send you a full explanation along with your refund confirmation so you know it won't happen again!",
+            "professional-low-low": "I will investigate the cause and provide a detailed explanation.",
+            "professional-low-high": "I will investigate the cause and provide a detailed explanation with your refund confirmation.",
+            "professional-high-low": "That's an excellent question. I'm going to investigate the root cause and provide you with a detailed explanation along with your refund confirmation.",
+            "professional-high-high": "That's an excellent question. I'm going to investigate the root cause and provide you with a detailed explanation along with your refund confirmation to ensure this doesn't recur."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 1,
+            "empathy": 2
+          },
+          "nextNodeId": "end_success_high"
+        }
+      ]
+    },
+    {
+      "id": "level_3_b2_1",
+      "level": 3,
+      "options": [
+        {
+          "id": "opt_3_b2_1_a",
+          "text": {
+            "friendly-low-low": "Yes, I can process a full refund. It will take 3-5 business days.",
+            "friendly-low-high": "Yes, I can process a full refund for you. It will take 3-5 business days.",
+            "friendly-high-low": "Yes, absolutely! Full refund coming right up! Should show up in 3-5 business days!",
+            "friendly-high-high": "Yes, absolutely! Full refund coming right up! Should show up in your account in 3-5 business days!",
+            "professional-low-low": "Yes, I will process a full refund. Processing time is 3-5 business days.",
+            "professional-low-high": "Yes, I will process a full refund. Processing time is 3-5 business days.",
+            "professional-high-low": "Yes, I'm processing a full refund for you right now. You can expect to see it within 3-5 business days.",
+            "professional-high-high": "Yes, I'm processing a full refund for you right now. You can expect to see it within 3-5 business days."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 1,
+            "empathy": 1
+          },
+          "nextNodeId": "end_success_high"
+        },
+        {
+          "id": "opt_3_b2_1_b",
+          "text": {
+            "friendly-low-low": "Yes, full refund approved. Email confirmation shortly, money in 3-5 days.",
+            "friendly-low-high": "Yes, full refund approved. You'll receive confirmation via email shortly and the money in 3-5 days.",
+            "friendly-high-low": "Absolutely! Full refund approved! You'll get a confirmation email in just a minute and the money in 3-5 days!",
+            "friendly-high-high": "Absolutely! Full refund approved! You'll get a confirmation email in just a minute and the money back in 3-5 days!",
+            "professional-low-low": "Full refund approved. Email confirmation will arrive shortly, funds in 3-5 days.",
+            "professional-low-high": "Full refund approved. Email confirmation will arrive shortly, with funds returned in 3-5 business days.",
+            "professional-high-low": "Yes, your full refund has been approved. You'll receive email confirmation shortly, and the funds will return within 3-5 business days.",
+            "professional-high-high": "Yes, your full refund has been approved. You'll receive email confirmation shortly, and the funds will return to your account within 3-5 business days."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 2,
+            "empathy": 1
+          },
+          "nextNodeId": "end_success_very_high"
+        }
+      ]
+    },
+    {
+      "id": "level_3_b2_2",
+      "level": 3,
+      "options": [
+        {
+          "id": "opt_3_b2_2_a",
+          "text": {
+            "friendly-low-low": "Yes, you are getting your full refund of $149.99.",
+            "friendly-low-high": "Yes, you are getting your full refund of $149.99.",
+            "friendly-high-low": "Yes! You're definitely getting your full $149.99 back!",
+            "friendly-high-high": "Yes! You're definitely getting your full $149.99 back!",
+            "professional-low-low": "Yes. You will receive a full refund of $149.99.",
+            "professional-low-high": "Yes. You will receive a full refund of $149.99.",
+            "professional-high-low": "Yes, I can confirm you will receive a full refund of $149.99.",
+            "professional-high-high": "Yes, I can confirm you will receive a full refund of $149.99."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 0,
+            "empathy": 0
+          },
+          "nextNodeId": "end_success_medium"
+        },
+        {
+          "id": "opt_3_b2_2_b",
+          "text": {
+            "friendly-low-low": "Yes. Full $149.99 refund, processed now, in your account in 3-5 days.",
+            "friendly-low-high": "Yes, absolutely. Full $149.99 refund, processed right now, back in your account in 3-5 days.",
+            "friendly-high-low": "Yes, absolutely YES! Full $149.99 refund, processing it right now, and it'll be back in your account in 3-5 days!",
+            "friendly-high-high": "Yes, absolutely YES! Full $149.99 refund, I'm processing it right this second, and it'll be back in your account in 3-5 days!",
+            "professional-low-low": "Confirmed: Full $149.99 refund processed immediately, appearing in 3-5 days.",
+            "professional-low-high": "Confirmed: Full $149.99 refund processed immediately, appearing in 3-5 business days.",
+            "professional-high-low": "Absolutely - you're receiving a full $149.99 refund, which I'm processing immediately. It will appear in your account within 3-5 business days.",
+            "professional-high-high": "Absolutely - you're receiving a full $149.99 refund, which I'm processing immediately. It will appear in your account within 3-5 business days."
+          },
+          "scores": {
+            "clarity": 2,
+            "friendly": 1,
+            "empathy": 1
+          },
+          "nextNodeId": "end_success_high"
+        }
+      ]
+    },
+    {
+      "id": "end_success_very_high",
+      "type": "ai_response",
+      "content": "Thank you so much for your help. I really appreciate how you handled this. I feel much better now!",
+      "nextNodeId": "complete"
+    },
+    {
+      "id": "end_success_high",
+      "type": "ai_response",
+      "content": "Okay, thank you for your help. I appreciate you taking care of this for me.",
+      "nextNodeId": "complete"
+    },
+    {
+      "id": "end_success_medium",
+      "type": "ai_response",
+      "content": "Alright, I guess that works. Thanks for handling it.",
+      "nextNodeId": "complete"
+    }
+  ]
+}
