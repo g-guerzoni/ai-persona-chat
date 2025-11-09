@@ -9,7 +9,7 @@ export const siteConfig = {
     "Production-ready Next.js application with TypeScript, Tailwind, Shadcn UI, and Supabase",
   url: process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
   links: {
-    github: "https://github.com",
+    github: "https://github.com/g-guerzoni/ai-persona-chat",
     docs: "/docs",
   },
 }
