@@ -55,7 +55,7 @@ export function ResetPasswordForm() {
 
   if (success) {
     return (
-      <div className="flex flex-col gap-4 text-center">
+      <div className="flex flex-col gap-4 text-center" role="status" aria-live="polite">
         <div className="bg-primary/10 text-primary border-primary rounded-md border p-4">
           <h3 className="mb-2 font-semibold">Check your email!</h3>
           <p className="text-sm">
@@ -71,32 +71,45 @@ export function ResetPasswordForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+    <form onSubmit={handleSubmit} className="flex flex-col gap-4" aria-label="Password reset form">
       {error && (
-        <div className="bg-destructive/10 text-destructive border-destructive rounded-md border p-3 text-sm">
+        <div
+          className="bg-destructive/10 text-destructive border-destructive rounded-md border p-3 text-sm"
+          role="alert"
+          aria-live="assertive"
+          id="reset-error"
+        >
           {error.message}
         </div>
       )}
 
-      <div className="flex flex-col gap-2">
-        <Label htmlFor="email">Email</Label>
-        <Input
-          id="email"
-          type="email"
-          placeholder="you@example.com"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          disabled={isLoading || authLoading}
-          required
-        />
-        <p className="text-muted-foreground text-xs">
-          We&apos;ll send you a link to reset your password
-        </p>
-      </div>
+      <fieldset disabled={isLoading || authLoading} className="flex flex-col gap-4">
+        <legend className="sr-only">Password reset information</legend>
 
-      <Button type="submit" disabled={isLoading || authLoading} className="w-full">
-        {isLoading ? "Sending..." : "Send Reset Link"}
-      </Button>
+        <div className="flex flex-col gap-2">
+          <Label htmlFor="email">Email</Label>
+          <Input
+            id="email"
+            type="email"
+            placeholder="you@example.com"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            disabled={isLoading || authLoading}
+            required
+            aria-invalid={error?.field === "email" ? "true" : "false"}
+            aria-describedby={
+              error?.field === "email" ? "reset-error reset-instructions" : "reset-instructions"
+            }
+          />
+          <p id="reset-instructions" className="text-muted-foreground text-xs">
+            We&apos;ll send you a link to reset your password
+          </p>
+        </div>
+
+        <Button type="submit" disabled={isLoading || authLoading} className="w-full">
+          {isLoading ? "Sending..." : "Send Reset Link"}
+        </Button>
+      </fieldset>
 
       <p className="text-muted-foreground text-center text-sm">
         Remember your password?{" "}

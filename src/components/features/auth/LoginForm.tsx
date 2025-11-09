@@ -55,50 +55,63 @@ export function LoginForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+    <form onSubmit={handleSubmit} className="flex flex-col gap-4" aria-label="Login form">
       {error && (
-        <div className="bg-destructive/10 text-destructive border-destructive rounded-md border p-3 text-sm">
+        <div
+          className="bg-destructive/10 text-destructive border-destructive rounded-md border p-3 text-sm"
+          role="alert"
+          aria-live="assertive"
+          id="login-error"
+        >
           {error.message}
         </div>
       )}
 
-      <div className="flex flex-col gap-2">
-        <Label htmlFor="email">Email</Label>
-        <Input
-          id="email"
-          type="email"
-          placeholder="you@example.com"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          disabled={isLoading || authLoading}
-          required
-        />
-      </div>
+      <fieldset disabled={isLoading || authLoading} className="flex flex-col gap-4">
+        <legend className="sr-only">Login credentials</legend>
 
-      <div className="flex flex-col gap-2">
-        <div className="flex items-center justify-between">
-          <Label htmlFor="password">Password</Label>
-          <Link
-            href="/forgot-password"
-            className="text-primary hover:text-primary/80 text-sm transition-colors"
-          >
-            Forgot password?
-          </Link>
+        <div className="flex flex-col gap-2">
+          <Label htmlFor="email">Email</Label>
+          <Input
+            id="email"
+            type="email"
+            placeholder="you@example.com"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            disabled={isLoading || authLoading}
+            required
+            aria-invalid={error?.field === "email" ? "true" : "false"}
+            aria-describedby={error?.field === "email" ? "login-error" : undefined}
+          />
         </div>
-        <Input
-          id="password"
-          type="password"
-          placeholder="••••••••"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          disabled={isLoading || authLoading}
-          required
-        />
-      </div>
 
-      <Button type="submit" disabled={isLoading || authLoading} className="w-full">
-        {isLoading ? "Signing in..." : "Sign In"}
-      </Button>
+        <div className="flex flex-col gap-2">
+          <div className="flex items-center justify-between">
+            <Label htmlFor="password">Password</Label>
+            <Link
+              href="/forgot-password"
+              className="text-primary hover:text-primary/80 text-sm transition-colors"
+            >
+              Forgot password?
+            </Link>
+          </div>
+          <Input
+            id="password"
+            type="password"
+            placeholder="••••••••"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            disabled={isLoading || authLoading}
+            required
+            aria-invalid={error?.field === "password" ? "true" : "false"}
+            aria-describedby={error?.field === "password" ? "login-error" : undefined}
+          />
+        </div>
+
+        <Button type="submit" disabled={isLoading || authLoading} className="w-full">
+          {isLoading ? "Signing in..." : "Sign In"}
+        </Button>
+      </fieldset>
 
       <p className="text-muted-foreground text-center text-sm">
         Don&apos;t have an account?{" "}
