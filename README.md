@@ -2,6 +2,9 @@
 
 A domain-neutral training simulation where learners practice conversational skills with AI personas. Each simulation features unique personas with configurable OCEAN personality traits and randomly selected scenarios.
 
+## Inital Idea
+<img width="2188" height="889" alt="image" src="https://github.com/user-attachments/assets/0b0c68df-0880-48b1-9581-a1f01e71b150" />
+
 ## Deployed Application
 
 Live URL: [To be added after deployment]
