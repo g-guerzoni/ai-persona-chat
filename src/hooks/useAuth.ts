@@ -1,6 +1,5 @@
 import { useAuthContext } from "@/contexts/AuthContext"
 
-// Re-export User type from auth types
 export type { User } from "@/types/auth"
 
 export interface AuthState {
@@ -13,14 +12,9 @@ export interface AuthState {
   } | null
 }
 
-/**
- * Custom hook for authentication state using Supabase
- * Wraps the AuthContext for easier consumption
- */
 export function useAuth() {
   const { user, session, isLoading, signIn, signOut } = useAuthContext()
 
-  // Transform Supabase user to match expected interface
   const transformedUser = user
     ? {
         id: user.id,
@@ -47,9 +41,7 @@ export function useAuth() {
     isLoading,
     logout: handleLogout,
     login: handleLogin,
-    // Keep signup for compatibility, though forms use context directly
     signup: async (name: string, email: string, password: string) => {
-      // This is here for compatibility but not actively used
       console.log("Signup via useAuth hook:", name, email)
     },
   }
