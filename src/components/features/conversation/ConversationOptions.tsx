@@ -5,16 +5,16 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { useState } from "react"
 import { Lock } from "lucide-react"
 import Link from "next/link"
-import type { DisplayOption } from "@/hooks/useConversation"
+import type { DisplayOption } from "@/hooks/useConversationAPI"
 
 export interface ConversationOptionsProps {
   options: DisplayOption[]
   onSend?: (optionId: string) => void
   disabled?: boolean
   isLocked?: boolean
+  isLoading?: boolean
 }
 
-// Ghost/skeleton option component
 function GhostOption() {
   return (
     <div className="border-input flex min-h-[60px] animate-pulse items-center gap-3 rounded-md border p-4">
@@ -29,26 +29,18 @@ export function ConversationOptions({
   onSend,
   disabled = false,
   isLocked = false,
+  isLoading = false,
 }: ConversationOptionsProps) {
   const [selected, setSelected] = useState<string>("")
-  const [isProcessing, setIsProcessing] = useState(false)
 
   const handleOptionSelect = (optionId: string) => {
-    if (isProcessing || disabled || isLocked) return
+    if (isLoading || disabled || isLocked) return
 
     setSelected(optionId)
-    setIsProcessing(true)
     onSend?.(optionId)
-
-    // Reset after sending
-    setTimeout(() => {
-      setSelected("")
-      setIsProcessing(false)
-    }, 600)
   }
 
-  // Show ghost options while processing
-  if (isProcessing) {
+  if (isLoading) {
     return (
       <section
         className="border-border flex shrink-0 flex-col gap-4 border-t p-4"
@@ -64,7 +56,6 @@ export function ConversationOptions({
     )
   }
 
-  // Show nothing if no options or disabled
   if (options.length === 0 || disabled) {
     return null
   }
@@ -74,7 +65,6 @@ export function ConversationOptions({
       className="border-border relative flex shrink-0 flex-col gap-4 border-t p-4"
       aria-label="Response options"
     >
-      {/* Lock overlay when not authenticated */}
       {isLocked && (
         <div
           className="absolute inset-0 z-10 flex flex-col items-center justify-center backdrop-blur-sm"

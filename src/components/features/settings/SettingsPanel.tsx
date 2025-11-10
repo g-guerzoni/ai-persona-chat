@@ -32,13 +32,14 @@ export function SettingsPanel({ metadata, settings, onSettingsChange }: Settings
           role="status"
           aria-live="polite"
         >
-          🔒 Settings locked during conversation
+          Settings locked during conversation
         </div>
       )}
 
       <ToneSelector
         value={settings.tone}
         onValueChange={(tone) => onSettingsChange({ tone: tone as "friendly" | "professional" })}
+        disabled={settings.isLocked}
       />
 
       <TraitSelector

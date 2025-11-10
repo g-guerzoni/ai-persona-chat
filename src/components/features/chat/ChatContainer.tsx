@@ -37,7 +37,6 @@ export function ChatContainer({
   settings,
   onSettingsChange,
 }: ChatContainerProps) {
-  // Convert ChatMessage[] to ChatMessageProps[] for ChatMessageList
   const messageProps = messages.map((msg) => ({
     content: msg.content,
     type: msg.role,

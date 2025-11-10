@@ -10,15 +10,13 @@ export interface ChatMessageProps {
   }
 }
 
-// Get the highest positive score category and its value
 function getHighestScore(scores: { clarity: number; friendly: number; empathy: number }) {
   const entries = [
     { name: "clarity", value: scores.clarity, color: "oklch(0.65 0.22 60)" },
     { name: "friendly", value: scores.friendly, color: "oklch(0.7 0.2 140)" },
-    { name: "empathy", value: scores.empathy, color: "oklch(0.65 0.22 180)" },
+    { name: "empathy", value: scores.empathy, color: "oklch(0.65 0.22 240)" },
   ]
 
-  // Filter positive scores and get the highest
   const positiveScores = entries.filter((e) => e.value > 0)
   if (positiveScores.length === 0) return null
 
