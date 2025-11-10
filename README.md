@@ -5,6 +5,9 @@ A domain-neutral training simulation where learners practice conversational skil
 ## Inital Idea
 <img width="2188" height="889" alt="image" src="https://github.com/user-attachments/assets/0b0c68df-0880-48b1-9581-a1f01e71b150" />
 
+## Demo Video
+https://youtu.be/YLM73xlPZ8Y
+
 ## Deployed Application
 
 Live URL: [To be added after deployment]
