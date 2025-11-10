@@ -11,7 +11,12 @@
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,css,md}\"",
     "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,css,md}\"",
     "type-check": "tsc --noEmit",
-    "prepare": "husky"
+    "prepare": "husky",
+    "seed:conversations": "tsx supabase/scripts/seed-conversations.ts",
+    "supabase:link": "npx supabase link --project-ref [YOUR_PROJECT_REF]",
+    "supabase:deploy": "./supabase/scripts/deploy-functions.sh",
+    "supabase:deploy:all": "npx supabase functions deploy",
+    "supabase:setup": "npm run seed:conversations && npm run supabase:deploy"
   },
   "lint-staged": {
     "*.{ts,tsx,js,jsx}": [
@@ -30,6 +35,7 @@
     "@radix-ui/react-tabs": "^1.1.13",
     "@radix-ui/react-toggle": "^1.1.10",
     "@radix-ui/react-toggle-group": "^1.1.11",
+    "@radix-ui/react-tooltip": "^1.2.8",
     "@supabase/ssr": "^0.7.0",
     "@supabase/supabase-js": "^2.79.0",
     "class-variance-authority": "^0.7.1",
@@ -43,15 +49,18 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20.19.24",
+    "@types/pg": "^8.15.6",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
     "eslint": "^9",
     "eslint-config-next": "16.0.1",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.6",
+    "pg": "^8.16.3",
     "prettier": "^3.6.2",
     "prettier-plugin-tailwindcss": "^0.7.1",
     "tailwindcss": "^4",
+    "tsx": "^4.7.1",
     "typescript": "^5"
   }
 }
