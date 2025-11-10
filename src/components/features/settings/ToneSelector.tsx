@@ -5,11 +5,12 @@ import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
 export interface ToneSelectorProps {
   value: string
   onValueChange: (value: string) => void
+  disabled?: boolean
 }
 
-export function ToneSelector({ value, onValueChange }: ToneSelectorProps) {
+export function ToneSelector({ value, onValueChange, disabled }: ToneSelectorProps) {
   return (
-    <fieldset className="flex w-full flex-col gap-2">
+    <fieldset className="flex w-full flex-col gap-2" disabled={disabled}>
       <legend className="text-primary text-lg font-medium">Tone</legend>
       <ToggleGroup
         type="single"
@@ -17,6 +18,7 @@ export function ToneSelector({ value, onValueChange }: ToneSelectorProps) {
         onValueChange={onValueChange}
         className="grid w-full grid-cols-2 gap-2"
         aria-label="Select conversation tone"
+        disabled={disabled}
       >
         <ToggleGroupItem
           value="friendly"
