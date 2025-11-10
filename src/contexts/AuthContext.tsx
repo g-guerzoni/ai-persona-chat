@@ -15,7 +15,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const supabase = createClient()
 
   useEffect(() => {
-    // Get initial session
     const initializeAuth = async () => {
       try {
         const {
@@ -32,7 +31,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
     initializeAuth()
 
-    // Listen for auth changes
     const {
       data: { subscription },
     } = supabase.auth.onAuthStateChange(async (event, session) => {
@@ -40,7 +38,6 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       setUser(session?.user ?? null)
       setIsLoading(false)
 
-      // Handle specific auth events
       if (event === "SIGNED_IN") {
         router.push("/")
         router.refresh()

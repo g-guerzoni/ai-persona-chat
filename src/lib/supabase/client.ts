@@ -1,9 +1,5 @@
 import { createBrowserClient } from "@supabase/ssr"
 
-/**
- * Creates a Supabase client for use in Client Components
- * This client is configured to work with browser cookies
- */
 export function createClient() {
   return createBrowserClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,

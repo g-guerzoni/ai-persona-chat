@@ -41,8 +41,8 @@ export function useAuth() {
     isLoading,
     logout: handleLogout,
     login: handleLogin,
-    signup: async (name: string, email: string, password: string) => {
-      console.log("Signup via useAuth hook:", name, email)
+    signup: async () => {
+      throw new Error("Signup via useAuth hook is deprecated. Use AuthContext directly.")
     },
   }
 }
