@@ -86,7 +86,7 @@
   /* Charts with vibrant colors */
   --chart-1: oklch(0.65 0.25 310); /* Purple */
   --chart-2: oklch(0.6 0.2 250); /* Blue */
-  --chart-3: oklch(0.65 0.22 180); /* Cyan */
+  --chart-3: oklch(0.65 0.22 240); /* Blue */
   --chart-4: oklch(0.7 0.2 140); /* Green */
   --chart-5: oklch(0.65 0.22 60); /* Yellow */
 
