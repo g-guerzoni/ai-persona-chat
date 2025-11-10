@@ -2,7 +2,7 @@
 
 import { SettingsPanel } from "./SettingsPanel"
 import type { ScenarioMetadata } from "@/types/conversation"
-import type { ConversationSettings } from "@/hooks/useConversation"
+import type { ConversationSettings } from "@/hooks/useConversationAPI"
 
 export interface MobileSettingsPanelProps {
   isOpen: boolean

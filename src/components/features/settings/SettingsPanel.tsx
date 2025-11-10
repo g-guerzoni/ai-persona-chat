@@ -3,7 +3,7 @@
 import { ToneSelector } from "./ToneSelector"
 import { TraitSelector } from "./TraitSelector"
 import type { ScenarioMetadata } from "@/types/conversation"
-import type { ConversationSettings } from "@/hooks/useConversation"
+import type { ConversationSettings } from "@/hooks/useConversationAPI"
 
 export interface SettingsPanelProps {
   metadata: ScenarioMetadata | null

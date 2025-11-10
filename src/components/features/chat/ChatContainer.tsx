@@ -3,7 +3,7 @@
 import { ChatHeader } from "./ChatHeader"
 import { ChatMessageList } from "./ChatMessageList"
 import { MobileSettingsPanel } from "../settings/MobileSettingsPanel"
-import type { ChatMessage, ConversationSettings } from "@/hooks/useConversation"
+import type { ChatMessage, ConversationSettings } from "@/hooks/useConversationAPI"
 import type { ScenarioMetadata } from "@/types/conversation"
 
 export interface ChatContainerProps {
