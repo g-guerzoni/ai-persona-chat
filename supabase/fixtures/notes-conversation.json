@@ -17,8 +17,8 @@
             "professional-high-high": "I sincerely apologize that you're experiencing this issue again. Let me review your previous cases immediately and work toward a comprehensive permanent solution."
           },
           "scores": {
-            "clarity": 1,
-            "friendly": 2,
+            "clarity": 0,
+            "friendly": 0,
             "empathy": 2
           },
           "nextNodeId": "response_0_a"
@@ -38,7 +38,7 @@
           "scores": {
             "clarity": 2,
             "friendly": 0,
-            "empathy": 1
+            "empathy": 0
           },
           "nextNodeId": "response_0_b"
         }
@@ -73,8 +73,8 @@
             "professional-high-high": "I understand your frustration. Based on your comprehensive case history, this appears to be a hardware issue rather than software. I'd like to arrange a replacement device for you with detailed tracking and documentation."
           },
           "scores": {
-            "clarity": 2,
-            "friendly": 2,
+            "clarity": 0,
+            "friendly": 0,
             "empathy": 2
           },
           "nextNodeId": "response_1_a1"
@@ -117,9 +117,9 @@
             "professional-high-high": "You're absolutely correct - this is a deeper issue. Given all the comprehensive troubleshooting you've completed, this appears to be a hardware defect. I'd like to send you a replacement device with complete documentation and tracking."
           },
           "scores": {
-            "clarity": 2,
+            "clarity": 0,
             "friendly": 2,
-            "empathy": 2
+            "empathy": 0
           },
           "nextNodeId": "response_1_b1"
         },
@@ -136,9 +136,9 @@
             "professional-high-high": "I appreciate the thorough troubleshooting you've completed. Let me escalate this to our technical team for advanced diagnostics with your complete case history and documentation."
           },
           "scores": {
-            "clarity": 1,
-            "friendly": 1,
-            "empathy": 1
+            "clarity": 0,
+            "friendly": 0,
+            "empathy": 2
           },
           "nextNodeId": "response_1_b2"
         }
@@ -186,8 +186,8 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 2,
-            "empathy": 2
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "response_2_a1_1"
         },
@@ -205,8 +205,8 @@
           },
           "scores": {
             "clarity": 1,
-            "friendly": 1,
-            "empathy": 1
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "response_2_a1_2"
         }
@@ -229,8 +229,8 @@
             "professional-high-high": "You're absolutely right, and I apologize for that. You've done extensive troubleshooting already. Let me arrange a device replacement for you immediately with complete tracking and documentation."
           },
           "scores": {
-            "clarity": 2,
-            "friendly": 2,
+            "clarity": 0,
+            "friendly": 0,
             "empathy": 2
           },
           "nextNodeId": "response_2_a2_1"
@@ -248,9 +248,9 @@
             "professional-high-high": "I understand your frustration. Let me explore whether we can repair your current device rather than continuing with troubleshooting, and I'll provide you with a detailed timeline and process outline."
           },
           "scores": {
-            "clarity": 1,
-            "friendly": 1,
-            "empathy": 1
+            "clarity": 0,
+            "friendly": 0,
+            "empathy": 2
           },
           "nextNodeId": "response_2_a2_2"
         }
@@ -273,8 +273,8 @@
             "professional-high-high": "You're correct, and I apologize this wasn't done sooner. I'm expediting the shipment - you'll receive it within 24 hours with complete tracking. I'm also including a prepaid return label with detailed instructions for your defective unit."
           },
           "scores": {
-            "clarity": 2,
-            "friendly": 2,
+            "clarity": 0,
+            "friendly": 0,
             "empathy": 2
           },
           "nextNodeId": "response_2_b1_1"
@@ -292,9 +292,9 @@
             "professional-high-high": "The standard shipping timeframe is 3-5 business days with tracking. I'll provide a prepaid return label with detailed instructions for your defective device."
           },
           "scores": {
-            "clarity": 2,
-            "friendly": 1,
-            "empathy": 0
+            "clarity": 0,
+            "friendly": 0,
+            "empathy": 1
           },
           "nextNodeId": "response_2_b1_2"
         }
@@ -317,8 +317,8 @@
             "professional-high-high": "You raise a valid point. Let me bypass the escalation process and arrange a replacement device for you instead with complete tracking and documentation."
           },
           "scores": {
-            "clarity": 2,
-            "friendly": 2,
+            "clarity": 0,
+            "friendly": 0,
             "empathy": 2
           },
           "nextNodeId": "response_2_b2_1"
@@ -410,8 +410,8 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 1,
-            "empathy": 1
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "end_success_high"
         },
@@ -429,8 +429,8 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 2,
-            "empathy": 2
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "end_success_very_high"
         }
@@ -454,8 +454,8 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 2,
-            "empathy": 2
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "end_success_very_high"
         },
@@ -498,8 +498,8 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 1,
-            "empathy": 1
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "end_success_high"
         },
@@ -516,8 +516,8 @@
             "professional-high-high": "I'll arrange overnight shipping - you'll receive it tomorrow with complete tracking. Additionally, I'm adding 6 months of complimentary premium support to compensate for the inconvenience you've experienced, including dedicated contact information and priority service access."
           },
           "scores": {
-            "clarity": 2,
-            "friendly": 2,
+            "clarity": 0,
+            "friendly": 0,
             "empathy": 2
           },
           "nextNodeId": "end_success_very_high"
@@ -542,8 +542,8 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 2,
-            "empathy": 2
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "end_success_high"
         },
@@ -561,8 +561,8 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 1,
-            "empathy": 1
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "end_success_medium"
         }
@@ -585,8 +585,8 @@
             "professional-high-high": "This will be from our revised production batch with the documented hardware fix implemented. It's different from your current model - the defect has been comprehensively addressed with complete technical documentation."
           },
           "scores": {
-            "clarity": 2,
-            "friendly": 1,
+            "clarity": 0,
+            "friendly": 0,
             "empathy": 1
           },
           "nextNodeId": "end_success_high"
@@ -605,8 +605,8 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 2,
-            "empathy": 2
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "end_success_very_high"
         }
@@ -629,8 +629,8 @@
             "professional-high-high": "You're right, and I apologize for the extended inconvenience. I'm upgrading you to complimentary overnight shipping with full tracking - you'll receive it tomorrow."
           },
           "scores": {
-            "clarity": 2,
-            "friendly": 2,
+            "clarity": 0,
+            "friendly": 0,
             "empathy": 2
           },
           "nextNodeId": "end_success_very_high"
@@ -648,9 +648,9 @@
             "professional-high-high": "Unfortunately, 3-5 days is our standard expedited timeframe per shipping policy. However, I can offer you a $25 account credit to compensate for the extended inconvenience you've experienced."
           },
           "scores": {
-            "clarity": 1,
-            "friendly": 1,
-            "empathy": 1
+            "clarity": 0,
+            "friendly": 0,
+            "empathy": 2
           },
           "nextNodeId": "end_success_medium"
         }
@@ -673,8 +673,8 @@
             "professional-high-high": "I'll arrange overnight shipping with full tracking - you'll receive it tomorrow."
           },
           "scores": {
-            "clarity": 2,
-            "friendly": 1,
+            "clarity": 0,
+            "friendly": 0,
             "empathy": 1
           },
           "nextNodeId": "end_success_high"
@@ -693,8 +693,8 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 2,
-            "empathy": 2
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "end_success_very_high"
         }
@@ -718,8 +718,8 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 2,
-            "empathy": 2
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "end_success_very_high"
         },
@@ -736,9 +736,9 @@
             "professional-high-high": "Following the comprehensive analysis, if a defect is confirmed through our diagnostic protocols, we would proceed with sending a replacement device. This is our standard process."
           },
           "scores": {
-            "clarity": 1,
+            "clarity": 2,
             "friendly": 0,
-            "empathy": -1
+            "empathy": 0
           },
           "nextNodeId": "end_success_low"
         }

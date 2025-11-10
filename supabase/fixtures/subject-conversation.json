@@ -1,28 +1,4 @@
 {
-  "metadata": {
-    "personaName": "Sarah",
-    "personaRole": "Anxious User",
-    "callId": "652418",
-    "service": "Account Support",
-    "subject": "Account Access Issue",
-    "notes": "User is locked out of account and needs urgent access. Shows signs of anxiety and needs reassurance along with solutions.",
-    "oceanTraits": {
-      "openness": 50,
-      "conscientiousness": 70,
-      "extraversion": 35,
-      "agreeableness": 75,
-      "neuroticism": 80
-    },
-    "primaryTrait": "extraversion",
-    "secondaryTrait": "neuroticism"
-  },
-  "initialMessages": {
-    "systemMessage": "You are speaking with Sarah, an anxious user who has been locked out of her account. She needs urgent access for an important meeting and is feeling stressed. Your goal is to be friendly, reassuring, and provide clear step-by-step guidance to resolve the issue.",
-    "initialMessage": {
-      "role": "ai",
-      "content": "Hi, I really need help - case #652418. I'm completely locked out of my account and I have an important client meeting in 30 minutes! I've tried resetting my password twice but it's not working. I'm really worried I won't be able to access my files."
-    }
-  },
   "conversationTree": [
     {
       "id": "start",
@@ -41,8 +17,8 @@
             "professional-high-high": "I understand this is urgent and stressful, and I'm here to help you regain access to your account. Let me review your account status immediately."
           },
           "scores": {
-            "clarity": 1,
-            "friendly": 2,
+            "clarity": 0,
+            "friendly": 0,
             "empathy": 2
           },
           "nextNodeId": "response_0_a"
@@ -98,8 +74,8 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 2,
-            "empathy": 2
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "response_1_a1"
         },
@@ -117,8 +93,8 @@
           },
           "scores": {
             "clarity": 1,
-            "friendly": 1,
-            "empathy": 1
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "response_1_a2"
         }
@@ -141,8 +117,8 @@
             "professional-high-high": "This is a standard security measure to protect your account, so please don't worry. I can remove the lockout restriction for you immediately."
           },
           "scores": {
-            "clarity": 2,
-            "friendly": 2,
+            "clarity": 0,
+            "friendly": 0,
             "empathy": 2
           },
           "nextNodeId": "response_1_b1"
@@ -161,7 +137,7 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 1,
+            "friendly": 0,
             "empathy": 0
           },
           "nextNodeId": "response_1_b2"
@@ -210,8 +186,8 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 2,
-            "empathy": 2
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "response_2_a1_1"
         },
@@ -229,7 +205,7 @@
           },
           "scores": {
             "clarity": 1,
-            "friendly": 1,
+            "friendly": 0,
             "empathy": 0
           },
           "nextNodeId": "response_2_a1_2"
@@ -253,9 +229,9 @@
             "professional-high-high": "No action is needed on your end. I've identified the issue - your account is temporarily locked. Don't worry, I can unlock it for you immediately."
           },
           "scores": {
-            "clarity": 2,
-            "friendly": 2,
-            "empathy": 1
+            "clarity": 0,
+            "friendly": 0,
+            "empathy": 2
           },
           "nextNodeId": "response_2_a2_1"
         },
@@ -297,8 +273,8 @@
             "professional-high-high": "You haven't done anything wrong - this is simply a security feature, so please don't worry. I'll just need to verify your email address, then I can remove the lockout immediately."
           },
           "scores": {
-            "clarity": 2,
-            "friendly": 2,
+            "clarity": 0,
+            "friendly": 0,
             "empathy": 2
           },
           "nextNodeId": "response_2_b1_1"
@@ -317,7 +293,7 @@
           },
           "scores": {
             "clarity": 1,
-            "friendly": 1,
+            "friendly": 0,
             "empathy": 0
           },
           "nextNodeId": "response_2_b1_2"
@@ -342,8 +318,8 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 2,
-            "empathy": 2
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "response_2_b2_1"
         },
@@ -434,8 +410,8 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 1,
-            "empathy": 1
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "end_success_high"
         },
@@ -452,8 +428,8 @@
             "professional-high-high": "You can log in with your existing password - no reset is needed. I'm also sending you detailed instructions via email for your reference. You'll be perfectly prepared for your meeting."
           },
           "scores": {
-            "clarity": 2,
-            "friendly": 2,
+            "clarity": 0,
+            "friendly": 0,
             "empathy": 2
           },
           "nextNodeId": "end_success_very_high"
@@ -478,8 +454,8 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 1,
-            "empathy": 1
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "end_success_high"
         },
@@ -496,8 +472,8 @@
             "professional-high-high": "Verified successfully. I'm unlocking your account now. It will be ready within 2 minutes, and I'll send you a confirmation email immediately upon completion. You're going to do great."
           },
           "scores": {
-            "clarity": 2,
-            "friendly": 2,
+            "clarity": 0,
+            "friendly": 0,
             "empathy": 2
           },
           "nextNodeId": "end_success_very_high"
@@ -522,8 +498,8 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 1,
-            "empathy": 1
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "end_success_high"
         },
@@ -540,8 +516,8 @@
             "professional-high-high": "Yes, your existing password will work. I'm unlocking your account now and will verify login functionality before confirming with you. You'll be ready for your meeting."
           },
           "scores": {
-            "clarity": 2,
-            "friendly": 2,
+            "clarity": 0,
+            "friendly": 0,
             "empathy": 2
           },
           "nextNodeId": "end_success_very_high"
@@ -565,8 +541,8 @@
             "professional-high-high": "I understand your time concern and your anxiety. The unlock is processing now and will be complete in under 2 minutes. You'll be ready."
           },
           "scores": {
-            "clarity": 2,
-            "friendly": 1,
+            "clarity": 0,
+            "friendly": 0,
             "empathy": 2
           },
           "nextNodeId": "end_success_high"
@@ -584,8 +560,8 @@
             "professional-high-high": "I understand your time concern and anxiety. The unlock will complete in less than 90 seconds, and I'll remain with you until you're logged in successfully. You're going to do great in your meeting."
           },
           "scores": {
-            "clarity": 2,
-            "friendly": 2,
+            "clarity": 0,
+            "friendly": 0,
             "empathy": 2
           },
           "nextNodeId": "end_success_very_high"
@@ -610,8 +586,8 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 1,
-            "empathy": 1
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "end_success_high"
         },
@@ -628,8 +604,8 @@
             "professional-high-high": "I'll unlock your account immediately. You can use your existing password, and I'll send you a confirmation email with all the relevant details. You'll be perfectly prepared."
           },
           "scores": {
-            "clarity": 2,
-            "friendly": 2,
+            "clarity": 0,
+            "friendly": 0,
             "empathy": 2
           },
           "nextNodeId": "end_success_very_high"
@@ -654,8 +630,8 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 1,
-            "empathy": 1
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "end_success_high"
         },
@@ -672,8 +648,8 @@
             "professional-high-high": "Yes, that's all I need, thank you. Unlocking your account now - 90 seconds until completion. I'll send you a confirmation email as well. You'll be ready for your meeting."
           },
           "scores": {
-            "clarity": 2,
-            "friendly": 2,
+            "clarity": 0,
+            "friendly": 0,
             "empathy": 2
           },
           "nextNodeId": "end_success_very_high"
@@ -697,8 +673,8 @@
             "professional-high-high": "You're welcome! Your account is verified and unlocking now. You'll be able to log in within 60 seconds. You'll do wonderfully in your meeting."
           },
           "scores": {
-            "clarity": 2,
-            "friendly": 2,
+            "clarity": 0,
+            "friendly": 0,
             "empathy": 2
           },
           "nextNodeId": "end_success_very_high"
@@ -717,8 +693,8 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 1,
-            "empathy": 1
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "end_success_high"
         }
@@ -742,8 +718,8 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 1,
-            "empathy": 1
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "end_success_high"
         },
@@ -760,8 +736,8 @@
             "professional-high-high": "I understand the urgency and your anxiety. Everything is verified and I'm unlocking your account now. 45 seconds and I'll confirm you're ready. You'll have plenty of time before your meeting, and you're going to do great."
           },
           "scores": {
-            "clarity": 2,
-            "friendly": 2,
+            "clarity": 0,
+            "friendly": 0,
             "empathy": 2
           },
           "nextNodeId": "end_success_very_high"

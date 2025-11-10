@@ -17,9 +17,9 @@
             "professional-high-high": "I understand the critical nature of this issue and I'm escalating it to priority status immediately. Let me access your system diagnostics right now and explore all potential root causes."
           },
           "scores": {
-            "clarity": 2,
-            "friendly": 1,
-            "empathy": 1
+            "clarity": 0,
+            "friendly": 0,
+            "empathy": 2
           },
           "nextNodeId": "response_0_a"
         },
@@ -74,8 +74,8 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 1,
-            "empathy": 1
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "response_1_a1"
         },
@@ -118,8 +118,8 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 1,
-            "empathy": 1
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "response_1_b1"
         },
@@ -186,8 +186,8 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 1,
-            "empathy": 2
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "response_2_a1_1"
         },
@@ -205,7 +205,7 @@
           },
           "scores": {
             "clarity": 0,
-            "friendly": 1,
+            "friendly": 0,
             "empathy": 1
           },
           "nextNodeId": "response_2_a1_2"
@@ -229,8 +229,8 @@
             "professional-high-high": "You're correct, and I apologize for the discrepancy. The status page hasn't updated yet. We have a confirmed database incident affecting your region, and the team is actively engaged with multiple remediation strategies."
           },
           "scores": {
-            "clarity": 2,
-            "friendly": 1,
+            "clarity": 0,
+            "friendly": 0,
             "empathy": 2
           },
           "nextNodeId": "response_2_a2_1"
@@ -274,8 +274,8 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 1,
-            "empathy": 1
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "response_2_b1_1"
         },
@@ -292,7 +292,7 @@
             "professional-high-high": "We're still conducting root cause analysis from multiple diagnostic angles, but we're implementing immediate mitigation measures to restore service while we investigate."
           },
           "scores": {
-            "clarity": 1,
+            "clarity": 0,
             "friendly": 0,
             "empathy": 1
           },
@@ -318,8 +318,8 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 2,
-            "empathy": 2
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "response_2_b2_1"
         },
@@ -337,8 +337,8 @@
           },
           "scores": {
             "clarity": 1,
-            "friendly": 1,
-            "empathy": 1
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "response_2_b2_2"
         }
@@ -410,8 +410,8 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 1,
-            "empathy": 1
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "end_success_high"
         },
@@ -429,8 +429,8 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 1,
-            "empathy": 2
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "end_success_very_high"
         }
@@ -453,8 +453,8 @@
             "professional-high-high": "I completely understand. I commit to providing you with comprehensive status updates every 5 minutes through this channel until we achieve full resolution."
           },
           "scores": {
-            "clarity": 2,
-            "friendly": 1,
+            "clarity": 0,
+            "friendly": 0,
             "empathy": 2
           },
           "nextNodeId": "end_success_high"
@@ -473,8 +473,8 @@
           },
           "scores": {
             "clarity": 1,
-            "friendly": 1,
-            "empathy": 1
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "end_success_medium"
         }
@@ -498,8 +498,8 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 1,
-            "empathy": 1
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "end_success_high"
         },
@@ -517,8 +517,8 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 2,
-            "empathy": 2
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "end_success_very_high"
         }
@@ -542,7 +542,7 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 1,
+            "friendly": 0,
             "empathy": 0
           },
           "nextNodeId": "end_success_medium"
@@ -561,8 +561,8 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 1,
-            "empathy": 1
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "end_success_high"
         }
@@ -586,8 +586,8 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 1,
-            "empathy": 1
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "end_success_high"
         },
@@ -605,8 +605,8 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 2,
-            "empathy": 2
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "end_success_very_high"
         }
@@ -631,7 +631,7 @@
           "scores": {
             "clarity": 2,
             "friendly": 0,
-            "empathy": 1
+            "empathy": 0
           },
           "nextNodeId": "end_success_medium"
         },
@@ -648,8 +648,8 @@
             "professional-high-high": "Based on current mitigation progress and multiple recovery scenarios, my estimate is 15-20 minutes for full restoration. I'll follow up in 5 minutes with a more accurate timeline and supporting data."
           },
           "scores": {
-            "clarity": 2,
-            "friendly": 1,
+            "clarity": 0,
+            "friendly": 0,
             "empathy": 2
           },
           "nextNodeId": "end_success_high"
@@ -674,8 +674,8 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 1,
-            "empathy": 1
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "end_success_high"
         },
@@ -693,8 +693,8 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 2,
-            "empathy": 2
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "end_success_very_high"
         }
@@ -718,8 +718,8 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 1,
-            "empathy": 1
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "end_success_medium"
         },
@@ -736,8 +736,8 @@
             "professional-high-high": "I'm establishing a direct connection with our senior engineer on call right now. They'll provide you with a detailed assessment from multiple diagnostic perspectives and timeline within 5 minutes."
           },
           "scores": {
-            "clarity": 2,
-            "friendly": 2,
+            "clarity": 0,
+            "friendly": 0,
             "empathy": 2
           },
           "nextNodeId": "end_success_very_high"

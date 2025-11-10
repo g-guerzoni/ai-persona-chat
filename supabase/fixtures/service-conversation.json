@@ -17,8 +17,8 @@
             "professional-high-high": "I absolutely understand your concern, and I appreciate you bringing this to my attention! Let me pull up your account details right away and get to the bottom of this."
           },
           "scores": {
-            "clarity": 1,
-            "friendly": 1,
+            "clarity": 0,
+            "friendly": 0,
             "empathy": 2
           },
           "nextNodeId": "response_0_a"
@@ -73,9 +73,9 @@
             "professional-high-high": "You're absolutely right to expect that notification! Let me investigate our email system to determine why you didn't receive advance notice of this charge."
           },
           "scores": {
-            "clarity": 1,
-            "friendly": 1,
-            "empathy": 1
+            "clarity": 0,
+            "friendly": 2,
+            "empathy": 0
           },
           "nextNodeId": "response_1_a1"
         },
@@ -94,7 +94,7 @@
           "scores": {
             "clarity": 2,
             "friendly": 0,
-            "empathy": -1
+            "empathy": 0
           },
           "nextNodeId": "response_1_a2"
         }
@@ -117,9 +117,9 @@
             "professional-high-high": "I completely understand your confusion! Let me access your billing history immediately to identify exactly what this $149.99 charge represents."
           },
           "scores": {
-            "clarity": 2,
-            "friendly": 1,
-            "empathy": 1
+            "clarity": 0,
+            "friendly": 2,
+            "empathy": 0
           },
           "nextNodeId": "response_1_b1"
         },
@@ -136,8 +136,8 @@
             "professional-high-high": "These situations often occur due to inadvertent upgrade selections or additional service activations. Allow me to thoroughly review your account configuration to determine the cause."
           },
           "scores": {
-            "clarity": 1,
-            "friendly": -1,
+            "clarity": 2,
+            "friendly": 0,
             "empathy": 0
           },
           "nextNodeId": "response_1_b2"
@@ -185,9 +185,9 @@
             "professional-high-high": "Given the notification issue, I'm authorized to process a complete refund for you right away. You can expect the funds to return to your account within 3-5 business days!"
           },
           "scores": {
-            "clarity": 2,
+            "clarity": 0,
             "friendly": 2,
-            "empathy": 2
+            "empathy": 0
           },
           "nextNodeId": "response_2_a1_1"
         },
@@ -204,9 +204,9 @@
             "professional-high-high": "I'll need to escalate this refund request to my supervisor for approval. The typical review period is 24-48 hours, after which we'll process your refund."
           },
           "scores": {
-            "clarity": 1,
+            "clarity": 2,
             "friendly": 0,
-            "empathy": 1
+            "empathy": 0
           },
           "nextNodeId": "response_2_a1_2"
         }
@@ -229,8 +229,8 @@
             "professional-high-high": "Please accept my sincere apologies - I absolutely did not intend to suggest this was your fault. Let me make this right by processing your full refund immediately."
           },
           "scores": {
-            "clarity": 1,
-            "friendly": 2,
+            "clarity": 0,
+            "friendly": 0,
             "empathy": 2
           },
           "nextNodeId": "response_2_a2_1"
@@ -274,8 +274,8 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 1,
-            "empathy": 1
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "response_2_b1_1"
         },
@@ -317,8 +317,8 @@
             "professional-high-high": "Please accept my apologies for the poor phrasing. Let me focus on resolving this issue by investigating your refund options right away."
           },
           "scores": {
-            "clarity": 1,
-            "friendly": 1,
+            "clarity": 0,
+            "friendly": 0,
             "empathy": 2
           },
           "nextNodeId": "response_2_b2_1"
@@ -409,9 +409,9 @@
             "professional-high-high": "It's my pleasure to help! Is there anything else I can assist you with today?"
           },
           "scores": {
-            "clarity": 1,
-            "friendly": 1,
-            "empathy": 1
+            "clarity": 0,
+            "friendly": 2,
+            "empathy": 0
           },
           "nextNodeId": "end_success_high"
         },
@@ -428,9 +428,9 @@
             "professional-high-high": "I'm glad to resolve this for you. Additionally, I'll be escalating the notification issue to our technical team to ensure this doesn't occur in the future."
           },
           "scores": {
-            "clarity": 2,
-            "friendly": 1,
-            "empathy": 2
+            "clarity": 0,
+            "friendly": 2,
+            "empathy": 0
           },
           "nextNodeId": "end_success_very_high"
         }
@@ -453,9 +453,9 @@
             "professional-high-high": "I understand your concern. While that's our standard approval process, I'll ensure your request is marked as urgent priority."
           },
           "scores": {
-            "clarity": 1,
-            "friendly": 1,
-            "empathy": 1
+            "clarity": 0,
+            "friendly": 0,
+            "empathy": 2
           },
           "nextNodeId": "end_success_medium"
         },
@@ -472,9 +472,9 @@
             "professional-high-high": "Let me reach out to my supervisor right away to request expedited processing of your refund."
           },
           "scores": {
-            "clarity": 1,
-            "friendly": 2,
-            "empathy": 2
+            "clarity": 2,
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "end_success_high"
         }
@@ -498,7 +498,7 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 1,
+            "friendly": 0,
             "empathy": 0
           },
           "nextNodeId": "end_success_medium"
@@ -517,8 +517,8 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 1,
-            "empathy": 1
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "end_success_high"
         }
@@ -541,9 +541,9 @@
             "professional-high-high": "I completely understand the urgency. I'll conduct a thorough policy review and contact you within one hour with a definitive answer."
           },
           "scores": {
-            "clarity": 2,
-            "friendly": 1,
-            "empathy": 1
+            "clarity": 1,
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "end_success_medium"
         },
@@ -560,9 +560,9 @@
             "professional-high-high": "I want to give you an answer right away. May I place you on a brief hold while I consult with my supervisor? This should take approximately two minutes."
           },
           "scores": {
-            "clarity": 2,
-            "friendly": 2,
-            "empathy": 2
+            "clarity": 1,
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "end_success_high"
         }
@@ -586,8 +586,8 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 1,
-            "empathy": 1
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "end_success_high"
         },
@@ -604,8 +604,8 @@
             "professional-high-high": "Your refund will be processed within 3-5 business days. Additionally, I'm applying a $10 credit to your account as a gesture of goodwill for this inconvenience."
           },
           "scores": {
-            "clarity": 2,
-            "friendly": 2,
+            "clarity": 0,
+            "friendly": 0,
             "empathy": 2
           },
           "nextNodeId": "end_success_very_high"
@@ -629,8 +629,8 @@
             "professional-high-high": "While I cannot determine the exact cause of the billing change, I've corrected it and your full refund will be processed within 3-5 business days."
           },
           "scores": {
-            "clarity": 1,
-            "friendly": 1,
+            "clarity": 2,
+            "friendly": 0,
             "empathy": 0
           },
           "nextNodeId": "end_success_medium"
@@ -648,9 +648,9 @@
             "professional-high-high": "That's an excellent question. I'm going to investigate the root cause and provide you with a detailed explanation along with your refund confirmation to ensure this doesn't recur."
           },
           "scores": {
-            "clarity": 2,
-            "friendly": 1,
-            "empathy": 2
+            "clarity": 0,
+            "friendly": 2,
+            "empathy": 0
           },
           "nextNodeId": "end_success_high"
         }
@@ -674,8 +674,8 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 1,
-            "empathy": 1
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "end_success_high"
         },
@@ -692,9 +692,9 @@
             "professional-high-high": "Yes, your full refund has been approved. You'll receive email confirmation shortly, and the funds will return to your account within 3-5 business days."
           },
           "scores": {
-            "clarity": 2,
+            "clarity": 0,
             "friendly": 2,
-            "empathy": 1
+            "empathy": 0
           },
           "nextNodeId": "end_success_very_high"
         }
@@ -737,8 +737,8 @@
           },
           "scores": {
             "clarity": 2,
-            "friendly": 1,
-            "empathy": 1
+            "friendly": 0,
+            "empathy": 0
           },
           "nextNodeId": "end_success_high"
         }
